@@ -1,5 +1,6 @@
 ---
 import config from '@/config/config.json';
+import { normalizePath } from '@/lib/links';
 
 export interface Props {
   title?: string;
@@ -19,7 +20,10 @@ const {
   noindex = false,
 } = Astro.props;
 
-const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site) : undefined;
+// one canonical URL per page, following site.trailing_slash (static hosts serve both "/blog/x" and "/blog/x/")
+const path = normalizePath(Astro.url.pathname);
+const canonicalPath = site.trailing_slash && path !== '/' ? `${path}/` : path;
+const canonical = Astro.site ? new URL(canonicalPath, Astro.site) : undefined;
 // CMS images are absolute already; local images are resolved against the site url
 const imageUrl = Astro.site ? new URL(image, Astro.site).href : image;
 ---
