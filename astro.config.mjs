@@ -8,6 +8,10 @@ export default defineConfig({
   site: config.site.base_url,
   trailingSlash: config.site.trailing_slash ? 'always' : 'ignore',
   integrations: [strapiMedia()],
+  build: {
+    // emit the bundled CSS as /_astro/*.css files instead of inlining it in the pages
+    inlineStylesheets: 'never',
+  },
   // Same family and weights the template loads from Google Fonts (self-hosted by Astro)
   fonts: [
     {
@@ -21,7 +25,7 @@ export default defineConfig({
   ],
   vite: {
     // pre-bundle GSAP and Lenis so the first dev page load registers the plugins
-    // before the interaction runtime (public/js/webflow.js) starts
+    // before the interaction runtime (public/js/site.js) starts
     optimizeDeps: {
       include: ['gsap', 'gsap/ScrollTrigger', 'gsap/SplitText', 'lenis'],
     },

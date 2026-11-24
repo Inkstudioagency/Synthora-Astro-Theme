@@ -1,10 +1,10 @@
 /**
- * Animation runtime: GSAP for the Webflow interactions, Lenis smooth scrolling and the
+ * Animation runtime: GSAP for the page interactions, Lenis smooth scrolling and the
  * number counters (`data-counter`). This is the template's footer code, bundled.
  *
- * Webflow Interactions (IX3, inside public/js/webflow.js) read GSAP from `window.gsap`
+ * The interactions (inside public/js/site.js) read GSAP from `window.gsap`
  * once the DOM is ready. This module runs before DOMContentLoaded, so exposing GSAP here
- * keeps the template's load order (jQuery -> webflow.js -> GSAP -> plugins -> Lenis).
+ * keeps the template's load order (jQuery -> site.js -> GSAP -> plugins -> Lenis).
  */
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -30,8 +30,8 @@ requestAnimationFrame(raf);
 
 // ---------- counters: elements with data-counter count up from 0 when they scroll into view
 
-window.Webflow ||= [];
-window.Webflow.push(() => {
+window.Synthora ||= [];
+window.Synthora.push(() => {
   // Keep ScrollTrigger in sync with Lenis smooth scroll
   lenis.on('scroll', ScrollTrigger.update);
   const pending: Array<{ counter: Element; started: boolean; start: () => void }> = [];

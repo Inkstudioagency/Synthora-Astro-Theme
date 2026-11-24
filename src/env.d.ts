@@ -14,6 +14,6 @@ interface ImportMeta {
 }
 
 interface Window {
-  /** Webflow runtime queue / API (public/js/webflow.js) */
-  Webflow?: Array<() => void>;
+  /** Interaction runtime queue / API (public/js/site.js) */
+  Synthora?: Array<() => void>;
 }

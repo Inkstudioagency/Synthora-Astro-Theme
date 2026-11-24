@@ -57,7 +57,7 @@ The Strapi server has its own `strapi/.env` (secrets, port, database, `MCP_ENABL
 ├── public/
 │   ├── images/            # theme images, icons and favicons
 │   ├── documents/         # Lottie animations (JSON)
-│   └── js/                # interaction runtime (webflow.js) and jQuery
+│   └── js/                # interaction runtime (site.js) and jQuery
 ├── integrations/          # CMS media in the build (demo images, Strapi downloads)
 ├── src/
 │   ├── components/
@@ -118,7 +118,7 @@ claude mcp add strapi-mcp --transport http http://localhost:1337/mcp -H "Authori
 
 ### Animations
 
-Animations are attached with attributes such as `hero-title`, `page-load-1`, `reveal-anim-1`, `data-reveal="stagger"` and `data-counter`, and played by the interaction runtime in `public/js/webflow.js` (with GSAP, see `src/scripts/animations.ts`), which also runs the dropdowns, tabs, sliders, mobile menu, lightbox and Lottie animations. Each page passes its `wfPage` id to `BaseLayout`; keep it when you edit a page, because the runtime uses it to find that page's animations. Elements with a `data-wf-target` attribute are hooked to interactions (for example the button hover effect); keep that attribute when you copy them. The header takes a `variant` prop (`base` or `transparent`, used by the V2 pages).
+Animations are attached with attributes such as `hero-title`, `page-load-1`, `reveal-anim-1`, `data-reveal="stagger"` and `data-counter`, and played by the interaction runtime in `public/js/site.js` (with GSAP, see `src/scripts/animations.ts`), which also runs the dropdowns, tabs, sliders, mobile menu, lightbox and Lottie animations. Each page passes its `wfPage` id to `BaseLayout`; keep it when you edit a page, because the runtime uses it to find that page's animations. Elements with a `data-wf-target` attribute are hooked to interactions (for example the button hover effect); keep that attribute when you copy them. The header takes a `variant` prop (`base` or `transparent`, used by the V2 pages).
 
 ## Deployment
 
