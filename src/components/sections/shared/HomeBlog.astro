@@ -1,0 +1,83 @@
+---
+import { linkFor } from '@/lib/links';
+import { formatDate, getLatestPosts, postUrl } from '@/lib/content';
+const link = linkFor(Astro.url.pathname);
+interface Props {
+  /** Fade-up reveal on the heading (About pages) */
+  headingReveal?: boolean;
+  /** Class of the image link (About V1 has no w-inline-block, like the template) */
+  imageLinkClass?: string;
+}
+const { headingReveal = false, imageLinkClass = 'blog-card-image-wrapper w-inline-block' } = Astro.props;
+const posts = await getLatestPosts();
+---
+
+<section class="section_home-blog">
+        <div class="section-gap">
+          <div class="container-main">
+            <div class="home-blog-wrapper">
+              <div class="home-blog-header">
+                <div data-reveal={headingReveal ? 'fade-up' : undefined} class="home-blog-heading">
+                  <div class="section-header">
+                    <div reveal-anim-1="" class="section-eyebrow">
+                      <div class="eyebrow-dot"></div>
+                      <div class="eyebrow-dot is-top-right"></div>
+                      <div class="eyebrow-dot is-bottom-left"></div>
+                      <div class="eyebrow-dot is-bottom-right"></div>
+                      <div class="section-eyebrow-text">Blogs</div>
+                    </div>
+                    <h2 section-title="" class="heading-style-2">Stay Up To Date With Our Journal</h2>
+                  </div>
+                </div>
+                <a data-wf-target="[[[&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4&quot;,&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4&quot;],[&quot;76f4d1a0-871a-e39f-475c-2a7ccd6e72b6&quot;]]]" data-wf-component-id="403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4" data-wf-variant-state="base" {...link('/blogs', 'primary-button w-inline-block')}>
+                  <div class="button-text-mask">
+                    <div data-wf-target="[[[&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4&quot;,&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f6&quot;],[&quot;76f4d1a0-871a-e39f-475c-2a7ccd6e72b6&quot;]]]" class="button-text">View All Blogs</div>
+                    <div data-wf-target="[[[&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4&quot;,&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f8&quot;],[&quot;76f4d1a0-871a-e39f-475c-2a7ccd6e72b6&quot;]]]" class="button-text is-hover">View All Blogs</div>
+                  </div>
+                  <div data-wf-target="[[[&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4&quot;,&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34fa&quot;],[&quot;76f4d1a0-871a-e39f-475c-2a7ccd6e72b6&quot;]]]" class="button-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 16 15" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="10.666" cy="3.2" r="1.067"></circle>
+                      <circle cx="8.533" cy="1.067" r="1.067"></circle>
+                      <circle cx="14.933" cy="7.466" r="1.067"></circle>
+                      <circle cx="1.067" cy="7.466" r="1.067"></circle>
+                      <circle cx="4.268" cy="7.466" r="1.067"></circle>
+                      <circle cx="7.467" cy="7.466" r="1.067"></circle>
+                      <circle cx="10.666" cy="7.466" r="1.067"></circle>
+                      <circle cx="12.8" cy="9.6" r="1.067"></circle>
+                      <circle cx="10.666" cy="11.733" r="1.067"></circle>
+                      <circle cx="8.533" cy="13.866" r="1.067"></circle>
+                      <circle cx="12.8" cy="5.333" r="1.067"></circle>
+                    </svg></div>
+                </a>
+              </div>
+              <div class="home-blog-list-wrapper w-dyn-list">
+  {
+    posts.length > 0 ? (
+      <div data-reveal="stagger" role="list" class="home-blog-list w-dyn-items">
+        {posts.map((post) => (
+          <div role="listitem" class="home-blog-item w-dyn-item">
+                    <div class="blog-card">
+                      <a tabindex="-1" aria-label="blog-card-image-wrapper" href={postUrl(post.slug)} class={imageLinkClass}><img src={post.thumbnail?.url} loading="lazy" aria-label="blog-card-image" alt={post.thumbnail?.alt} class="blog-card-image"></a>
+                      <div class="blog-card-body">
+                        <div class="blog-card-meta">
+                          <div class="blog-card-tag">{post.category}</div>
+                          <div class="blog-card-date">{formatDate(post.publishedDate)}</div>
+                        </div>
+                        <a {...link(postUrl(post.slug), 'blog-card-title-block w-inline-block')}>
+                          <h3 aria-label="blog-card-title" class="blog-card-title">{post.title}</h3>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+        ))}
+      </div>
+    ) : (
+      <div class="w-dyn-empty">
+                  <div>No items found.</div>
+                </div>
+    )
+  }
+</div>
+            </div>
+          </div>
+        </div>
+      </section>

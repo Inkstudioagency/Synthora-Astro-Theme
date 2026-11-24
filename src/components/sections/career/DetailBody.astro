@@ -1,0 +1,67 @@
+---
+import { linkFor } from '@/lib/links';
+import { renderBlocks } from '@/lib/blocks';
+import type { Career } from '@/lib/content';
+const link = linkFor(Astro.url.pathname);
+interface Props {
+  entry: Career;
+}
+const { entry } = Astro.props;
+---
+
+<section class="section_detail-body">
+        <div class="section-gap">
+          <div class="container-main">
+            <div class="detail-layout is-compact">
+              <div reveal-anim-1="" class="detail-main is-compact">
+                <div class="detail-rich-text is-compact w-richtext" set:html={renderBlocks(entry.description)}></div>
+              </div>
+              <div reveal-anim-2="" class="detail-sidebar is-compact">
+                <div class="detail-card is-bordered">
+                  <div class="corner-dots">
+                    <div class="corner-dot is-tl"></div>
+                    <div class="corner-dot is-tr"></div>
+                    <div class="corner-dot is-bl"></div>
+                    <div class="corner-dot is-br"></div>
+                  </div>
+                  <div class="detail-info-list">
+                    <div class="detail-info-row">
+                      <div class="pricing-compare-label">Employment type</div>
+                      <div class="text-size-small">{entry.employmentType}</div>
+                    </div>
+                    <div class="detail-info-row">
+                      <div class="pricing-compare-label">Working days</div>
+                      <div class="text-size-small">{entry.workingDays}</div>
+                    </div>
+                    <div class="detail-info-row">
+                      <div class="pricing-compare-label">Salary</div>
+                      <div class="text-size-small">{entry.salary}</div>
+                    </div>
+                  </div>
+                  <div class="detail-apply">
+                    <a data-wf-target="[[[&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4&quot;,&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4&quot;],[&quot;43095e1f-7dcf-9a50-20c0-8b381302c873&quot;]]]" data-wf-component-id="403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4" data-wf-variant-state="base" {...link('/contact', 'primary-button w-inline-block')}>
+                      <div class="button-text-mask">
+                        <div data-wf-target="[[[&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4&quot;,&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f6&quot;],[&quot;43095e1f-7dcf-9a50-20c0-8b381302c873&quot;]]]" class="button-text">Apply Now</div>
+                        <div data-wf-target="[[[&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4&quot;,&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f8&quot;],[&quot;43095e1f-7dcf-9a50-20c0-8b381302c873&quot;]]]" class="button-text is-hover">Apply Now</div>
+                      </div>
+                      <div data-wf-target="[[[&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4&quot;,&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34fa&quot;],[&quot;43095e1f-7dcf-9a50-20c0-8b381302c873&quot;]]]" class="button-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 16 15" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="10.666" cy="3.2" r="1.067"></circle>
+                          <circle cx="8.533" cy="1.067" r="1.067"></circle>
+                          <circle cx="14.933" cy="7.466" r="1.067"></circle>
+                          <circle cx="1.067" cy="7.466" r="1.067"></circle>
+                          <circle cx="4.268" cy="7.466" r="1.067"></circle>
+                          <circle cx="7.467" cy="7.466" r="1.067"></circle>
+                          <circle cx="10.666" cy="7.466" r="1.067"></circle>
+                          <circle cx="12.8" cy="9.6" r="1.067"></circle>
+                          <circle cx="10.666" cy="11.733" r="1.067"></circle>
+                          <circle cx="8.533" cy="13.866" r="1.067"></circle>
+                          <circle cx="12.8" cy="5.333" r="1.067"></circle>
+                        </svg></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

@@ -1,0 +1,22 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import HomePricing from '@/components/sections/pricing/HomePricing.astro';
+import PricingCompare from '@/components/sections/pricing/PricingCompare.astro';
+import HomeFaq from '@/components/sections/shared/HomeFaq.astro';
+import Cta from '@/components/sections/shared/Cta.astro';
+---
+
+<BaseLayout
+  wfPage="6b03d9375de33e5d414c2692"
+  title="Pricing Plans for AI Agent Automation | Synthora"
+  description="Compare Synthora pricing plans for AI agent automation. Starter, Business and Enterprise tiers with clear limits, credits and support, and no hidden fees."
+>
+  <HomePricing />
+  <div class="section-divider"></div>
+  <PricingCompare />
+  <div class="section-divider"></div>
+  <HomeFaq />
+  <div class="section-divider"></div>
+  <Cta />
+  <div class="section-divider"></div>
+</BaseLayout>

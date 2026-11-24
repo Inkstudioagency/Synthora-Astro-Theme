@@ -1,0 +1,22 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import CareersHero from '@/components/sections/careers/CareersHero.astro';
+import CareersBenefits from '@/components/sections/careers/CareersBenefits.astro';
+import CareersPositions from '@/components/sections/careers/CareersPositions.astro';
+import HomeFaq from '@/components/sections/shared/HomeFaq.astro';
+import Cta from '@/components/sections/shared/Cta.astro';
+---
+
+<BaseLayout
+  wfPage="6b03d9375de33e5d414c2698"
+  title="Careers - Open Roles at an AI Startup | Synthora"
+  description="Join the Synthora team and help build the future of AI automation. Explore open roles, remote-first benefits, learning budgets and stock options."
+>
+  <CareersHero />
+  <div class="section-divider"></div>
+  <CareersBenefits />
+  <CareersPositions />
+  <div class="section-divider"></div>
+  <HomeFaq />
+  <Cta />
+</BaseLayout>

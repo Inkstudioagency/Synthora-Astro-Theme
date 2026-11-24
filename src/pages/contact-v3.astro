@@ -1,0 +1,24 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ContactV3Hero from '@/components/sections/contact-v3/ContactV3Hero.astro';
+import ContactV3Info from '@/components/sections/contact-v3/ContactV3Info.astro';
+import LogoMarquee from '@/components/sections/shared/LogoMarquee.astro';
+import ContactV3Offices from '@/components/sections/contact-v3/ContactV3Offices.astro';
+import FaqTabs from '@/components/sections/shared/FaqTabs.astro';
+---
+
+<BaseLayout
+  wfPage="6b03d9375de33e5d414c2695"
+  title="Contact V3 - Support, Sales and Offices | Synthora"
+  description="Synthora Contact V3 layout: a centred enquiry form, email, support and phone cards, a trusted-by logo marquee and an office slider with addresses."
+>
+  <ContactV3Hero />
+  <ContactV3Info />
+  <div class="section-divider"></div>
+  <LogoMarquee />
+  <div class="section-divider"></div>
+  <ContactV3Offices />
+  <div class="section-divider"></div>
+  <FaqTabs />
+  <div class="section-divider"></div>
+</BaseLayout>

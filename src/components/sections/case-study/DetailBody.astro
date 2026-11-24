@@ -1,0 +1,64 @@
+---
+import { renderBlocks } from '@/lib/blocks';
+import type { CaseStudy } from '@/lib/content';
+interface Props {
+  entry: CaseStudy;
+}
+const { entry } = Astro.props;
+---
+
+<section class="section_detail-body">
+        <div class="section-gap">
+          <div class="container-main">
+            <div class="detail-layout">
+              <div reveal-anim-1="" class="detail-main">
+                <div class="detail-rich-text w-richtext" set:html={renderBlocks(entry.body)}></div>
+              </div>
+              <div data-reveal="stagger" class="detail-sidebar">
+                <div class="detail-card">
+                  <div class="corner-dots">
+                    <div class="corner-dot is-tl"></div>
+                    <div class="corner-dot is-tr"></div>
+                    <div class="corner-dot is-bl"></div>
+                    <div class="corner-dot is-br"></div>
+                  </div>
+                  <div class="detail-info-list">
+                    <div class="detail-info-row">
+                      <div class="pricing-compare-label">Company</div>
+                      <div class="text-size-small">{entry.company}</div>
+                    </div>
+                    <div class="detail-info-row">
+                      <div class="pricing-compare-label">Industry</div>
+                      <div class="text-size-small">{entry.industry}</div>
+                    </div>
+                    <div class="detail-info-row">
+                      <div class="pricing-compare-label">Company Size</div>
+                      <div class="text-size-small">{entry.companySize}</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="detail-card">
+                  <div class="case-quote-top"><img src={entry.logo?.url} loading="lazy" alt={entry.logo?.alt} class="case-logo">
+                    <div class="case-quote-stars w-embed"><svg width="100%" height="100%" viewBox="0 0 108 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rated 5 out of 5">
+                        <g fill="currentColor">
+                          <path d="M10 1.2l2.6 5.6 6.1.7-4.5 4.2 1.2 6.1L10 14.8l-5.4 3 1.2-6.1-4.5-4.2 6.1-.7z"></path>
+                          <path transform="translate(22 0)" d="M10 1.2l2.6 5.6 6.1.7-4.5 4.2 1.2 6.1L10 14.8l-5.4 3 1.2-6.1-4.5-4.2 6.1-.7z"></path>
+                          <path transform="translate(44 0)" d="M10 1.2l2.6 5.6 6.1.7-4.5 4.2 1.2 6.1L10 14.8l-5.4 3 1.2-6.1-4.5-4.2 6.1-.7z"></path>
+                          <path transform="translate(66 0)" d="M10 1.2l2.6 5.6 6.1.7-4.5 4.2 1.2 6.1L10 14.8l-5.4 3 1.2-6.1-4.5-4.2 6.1-.7z"></path>
+                          <path transform="translate(88 0)" d="M10 1.2l2.6 5.6 6.1.7-4.5 4.2 1.2 6.1L10 14.8l-5.4 3 1.2-6.1-4.5-4.2 6.1-.7z"></path>
+                        </g>
+                      </svg></div>
+                  </div>
+                  <p class="case-quote-text">{entry.quote}</p>
+                  <div class="case-quote-person"><img src={entry.quoteAuthor.photo?.url} loading="lazy" alt={entry.quoteAuthor.photo?.alt} class="case-quote-avatar">
+                    <div class="case-quote-author">
+                      <div class="pricing-compare-label">{entry.quoteAuthor.name}</div>
+                      <div class="text-size-small">{entry.quoteAuthor.role}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

@@ -1,0 +1,78 @@
+---
+import { linkFor } from '@/lib/links';
+import { caseStudyUrl, getCaseStudies } from '@/lib/content';
+interface Props {
+  /** Reveal animation on the slider (Home V3) */
+  reveal?: boolean;
+}
+const { reveal = false } = Astro.props;
+const caseStudies = await getCaseStudies();
+const link = linkFor(Astro.url.pathname);
+---
+
+<section class="section_testimonials-v3">
+        <div class="section-gap">
+          <div class="container-main">
+            <div class="testimonials-v3-wrapper">
+              <div data-reveal="fade-up" class="testimonials-v3-head">
+                <div class="testimonials-v3-heading">
+                  <div class="section-header">
+                    <div reveal-anim-1="" class="section-eyebrow">
+                      <div class="eyebrow-dot"></div>
+                      <div class="eyebrow-dot is-top-right"></div>
+                      <div class="eyebrow-dot is-bottom-left"></div>
+                      <div class="eyebrow-dot is-bottom-right"></div>
+                      <div class="section-eyebrow-text">Testimonials</div>
+                    </div>
+                    <h2 section-title="" class="heading-style-2">Featured Success Stories From Our Clients</h2>
+                  </div>
+                </div>
+              </div>
+              <div reveal-anim-3={reveal ? '' : undefined} class="testimonials-v3-list-wrapper w-dyn-list">
+  {
+    caseStudies.length > 0 ? (
+      <div role="list" class="testimonials-v3-list w-dyn-items">
+        {caseStudies.map((item) => (
+          <div role="listitem" class="case-card w-dyn-item">
+                    <div class="case-card-visual"><img src={item.cardImage?.url} loading="lazy" alt={item.cardImage?.alt} class="case-card-bg"><img src={item.logo?.url} loading="lazy" alt={item.logo?.alt} class="case-card-logo"></div>
+                    <div class="case-card-content">
+                      <p class="case-card-quote">{item.quote}</p>
+                      <div class="case-card-stats">
+                        <div class="case-card-stat">
+                          <div data-counter="counter" class="case-card-stat-number">{item.stats[0]?.value}</div>
+                          <div class="case-card-stat-label">{item.stats[0]?.label}</div>
+                        </div>
+                        <div class="case-card-stat">
+                          <div data-counter="counter" class="case-card-stat-number">{item.stats[1]?.value}</div>
+                          <div class="case-card-stat-label">{item.stats[1]?.label}</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="case-card-aside">
+                      <div class="case-card-author"><img src={item.quoteAuthor.photo?.url} loading="lazy" alt={item.quoteAuthor.photo?.alt} class="case-card-avatar">
+                        <div class="case-card-author-info">
+                          <div class="case-card-name">{item.quoteAuthor.name}</div>
+                          <div class="case-card-role">{item.quoteAuthor.role}</div>
+                        </div>
+                      </div>
+                      <a data-wf-target="[[[&quot;1ed284f7-807c-746b-364b-85823408f81d&quot;,&quot;1ed284f7-807c-746b-364b-85823408f81d&quot;],[&quot;d34f1943-ac99-bc11-7dc3-78d01b1245df_instance-0&quot;]]]" data-wf-component-id="1ed284f7-807c-746b-364b-85823408f81d" data-wf-variant-state="base" {...link(caseStudyUrl(item.slug), 'secondary-button is-gray w-inline-block')}>
+                        <div class="button-text-mask">
+                          <div data-wf-target="[[[&quot;1ed284f7-807c-746b-364b-85823408f81d&quot;,&quot;1ed284f7-807c-746b-364b-85823408f81f&quot;],[&quot;d34f1943-ac99-bc11-7dc3-78d01b1245df_instance-0&quot;]]]" class="button-text">View Case Study</div>
+                          <div data-wf-target="[[[&quot;1ed284f7-807c-746b-364b-85823408f81d&quot;,&quot;1ed284f7-807c-746b-364b-85823408f820&quot;],[&quot;d34f1943-ac99-bc11-7dc3-78d01b1245df_instance-0&quot;]]]" class="button-text is-hover">View Case Study</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+        ))}
+      </div>
+    ) : (
+      <div class="w-dyn-empty">
+                  <div>No items found.</div>
+                </div>
+    )
+  }
+</div>
+            </div>
+          </div>
+        </div>
+      </section>

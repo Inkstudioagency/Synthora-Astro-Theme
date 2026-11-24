@@ -1,0 +1,70 @@
+---
+import { linkFor } from '@/lib/links';
+import { careerUrl, getCareers } from '@/lib/content';
+// like the template, the four newest positions (the current one included)
+const careers = await getCareers(4);
+const link = linkFor(Astro.url.pathname);
+---
+
+<section class="section_careers-positions">
+        <div class="section-gap">
+          <div class="container-main">
+            <div class="careers-positions-wrapper">
+              <div class="section-header">
+                <div reveal-anim-1="" class="section-eyebrow">
+                  <div class="eyebrow-dot"></div>
+                  <div class="eyebrow-dot is-top-right"></div>
+                  <div class="eyebrow-dot is-bottom-left"></div>
+                  <div class="eyebrow-dot is-bottom-right"></div>
+                  <div class="section-eyebrow-text">Roles</div>
+                </div>
+                <h2 section-title="" class="heading-style-2">Other Job Roles</h2>
+              </div>
+              <div class="career-list-wrapper">
+                <div class="w-dyn-list">
+  {
+    careers.length > 0 ? (
+      <div data-reveal="stagger" role="list" class="careers-positions-grid w-dyn-items">
+        {careers.map((job) => (
+          <div role="listitem" class="w-dyn-item">
+                      <div class="career-card">
+                        <div class="career-card-content">
+                          <div {...{ href: '/careers' }} class="blog-card-title-block">
+                            <h3 aria-label="heading-style-6" class="heading-style-6">{job.title}</h3>
+                          </div>
+                          <div class="career-card-meta">
+                            <div class="text-size-small">{job.location}</div>
+                            <div class="career-card-meta-dot"></div>
+                            <div class="text-size-small">{job.experience}</div>
+                          </div>
+                        </div>
+                        <div class="career-card-button">
+                          <a data-wf-target="[[[&quot;1ed284f7-807c-746b-364b-85823408f81d&quot;,&quot;1ed284f7-807c-746b-364b-85823408f81d&quot;],[&quot;dc01b13e-e939-9bfe-fe62-6749d1129722_instance-0&quot;]]]" data-wf-component-id="1ed284f7-807c-746b-364b-85823408f81d" data-wf-variant-state="base" {...link(careerUrl(job.slug), 'secondary-button is-gray w-inline-block')}>
+                            <div class="button-text-mask">
+                              <div data-wf-target="[[[&quot;1ed284f7-807c-746b-364b-85823408f81d&quot;,&quot;1ed284f7-807c-746b-364b-85823408f81f&quot;],[&quot;dc01b13e-e939-9bfe-fe62-6749d1129722_instance-0&quot;]]]" class="button-text">View Job Details</div>
+                              <div data-wf-target="[[[&quot;1ed284f7-807c-746b-364b-85823408f81d&quot;,&quot;1ed284f7-807c-746b-364b-85823408f820&quot;],[&quot;dc01b13e-e939-9bfe-fe62-6749d1129722_instance-0&quot;]]]" class="button-text is-hover">View Job Details</div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="corner-dots">
+                          <div class="corner-dot is-tl"></div>
+                          <div class="corner-dot is-tr"></div>
+                          <div class="corner-dot is-bl"></div>
+                          <div class="corner-dot is-br"></div>
+                        </div>
+                      </div>
+                    </div>
+        ))}
+      </div>
+    ) : (
+      <div class="w-dyn-empty">
+                    <div>No items found.</div>
+                  </div>
+    )
+  }
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

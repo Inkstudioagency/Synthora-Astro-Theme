@@ -1,0 +1,31 @@
+{
+  "site": {
+    "title": "Synthora",
+    "base_url": "https://synthora-astro-theme.vercel.app",
+    "trailing_slash": false,
+    "logo": "/images/synthora-logo.svg",
+    "logo_alt": "Synthora logo"
+  },
+  "metadata": {
+    "meta_title": "Synthora - AI startup Astro theme",
+    "meta_description": "Synthora is a dark AI startup Astro theme for agent automation platforms, with pricing, testimonials, integrations, careers and a blog ready to ship.",
+    "meta_image": "/images/synthora-open-graph.png",
+    "meta_author": "Ink Studio"
+  },
+  "navigation": {
+    "cta": { "label": "Start for Free", "link": "/contact" },
+    "mega_menu_label": "Multilayout",
+    "preview": {
+      "link": "/",
+      "label": "Open the Synthora home page",
+      "image": "/images/synthora-megamenu-preview_1synthora-megamenu-preview.webp",
+      "image_alt": "Preview of the Synthora home page"
+    }
+  },
+  "footer": {
+    "newsletter_title": "Join our mail list for latest updates",
+    "copyright": "© 2026 Synthora. All rights reserved.",
+    "designed_by": { "name": "Ink Studio", "link": "https://inks.studio" },
+    "powered_by": { "name": "Astro", "link": "https://astro.build" }
+  }
+}

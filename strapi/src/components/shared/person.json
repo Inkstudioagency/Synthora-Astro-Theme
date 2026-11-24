@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_people",
+  "info": {
+    "displayName": "Person",
+    "icon": "user",
+    "description": "A person with a name, role and photo (blog authors, case study quotes)"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "role": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "main": [
+    { "name": "Home", "url": "/" },
+    { "name": "About", "url": "/about-v1" },
+    { "name": "Pricing", "url": "/pricing" },
+    { "name": "Blog", "url": "/blogs" }
+  ],
+  "versions": [
+    {
+      "title": "Home page",
+      "mobile_title": "Home",
+      "icon": "home",
+      "links": [
+        { "name": "Version 1", "url": "/" },
+        { "name": "Version 2", "url": "/home-v2" },
+        { "name": "Version 3", "url": "/home-v3" }
+      ]
+    },
+    {
+      "title": "About page",
+      "mobile_title": "About",
+      "icon": "about",
+      "links": [
+        { "name": "Version 1", "url": "/about-v1" },
+        { "name": "Version 2", "url": "/about-v2" },
+        { "name": "Version 3", "url": "/about-v3" }
+      ]
+    },
+    {
+      "title": "Contact page",
+      "mobile_title": "Contact",
+      "icon": "contact",
+      "links": [
+        { "name": "Version 1", "url": "/contact" },
+        { "name": "Version 2", "url": "/contact-v2" },
+        { "name": "Version 3", "url": "/contact-v3" }
+      ]
+    }
+  ],
+  "mega": [
+    {
+      "title": "Company Pages",
+      "links": [
+        { "name": "Blog page", "url": "/blogs" },
+        { "name": "Pricing page", "url": "/pricing" },
+        { "name": "Career page", "url": "/careers" },
+        { "name": "Integrations page", "url": "/integrations" }
+      ]
+    },
+    {
+      "title": "Single pages",
+      "links": [
+        { "name": "Blog Single page", "url": "/blog/finance-month-end-close-automation" },
+        { "name": "Case study Single page", "url": "/case-study/railspeed-order-processing" },
+        { "name": "Pricing page", "url": "/pricing" },
+        { "name": "Career Single page", "url": "/career/market-expansion-specialist" }
+      ]
+    },
+    {
+      "title": "Other",
+      "links": [{ "name": "404", "url": "/404" }]
+    }
+  ],
+  "mobile": {
+    "title": "Company Pages",
+    "links": [
+      { "name": "Blog", "url": "/blogs" },
+      { "name": "Pricing", "url": "/pricing" },
+      { "name": "Careers", "url": "/careers" },
+      { "name": "Integrations", "url": "/integrations" }
+    ]
+  },
+  "footer": [
+    {
+      "title": "Main pages",
+      "links": [
+        { "name": "Home V1", "url": "/" },
+        { "name": "Home V2", "url": "/home-v2" },
+        { "name": "Home V3", "url": "/home-v3" },
+        { "name": "About V1", "url": "/about-v1" },
+        { "name": "About V2", "url": "/about-v2" },
+        { "name": "About V3", "url": "/about-v3" }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        { "name": "Contact V1", "url": "/contact" },
+        { "name": "Contact V2", "url": "/contact-v2" },
+        { "name": "Contact V3", "url": "/contact-v3" },
+        { "name": "Careers", "url": "/careers" },
+        { "name": "Integrations", "url": "/integrations" },
+        { "name": "Latest news", "url": "/blogs" }
+      ]
+    },
+    {
+      "title": "Other pages",
+      "links": [
+        { "name": "Style Guide", "url": "/style-guide" },
+        { "name": "Not Found", "url": "/404" }
+      ]
+    }
+  ]
+}

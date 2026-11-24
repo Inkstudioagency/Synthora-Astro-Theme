@@ -1,0 +1,8 @@
+{
+  "main": [
+    { "name": "Synthora on Facebook", "icon": "facebook", "link": "https://www.facebook.com/" },
+    { "name": "Synthora on X (Twitter)", "icon": "x", "link": "https://x.com/" },
+    { "name": "Synthora on Instagram", "icon": "instagram", "link": "https://www.instagram.com/" },
+    { "name": "Synthora on LinkedIn", "icon": "linkedin", "link": "https://www.linkedin.com/" }
+  ]
+}

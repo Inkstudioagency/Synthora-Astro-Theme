@@ -1,0 +1,84 @@
+---
+import { linkFor } from '@/lib/links';
+import { formatDate, getLatestPosts, postUrl } from '@/lib/content';
+const link = linkFor(Astro.url.pathname);
+const posts = await getLatestPosts();
+---
+
+<section class="section_blog-v3">
+        <div class="section-gap">
+          <div class="container-main">
+            <div class="blog-v3-wrapper">
+              <div data-reveal="fade-up" class="home-blog-header">
+                <div class="home-blog-heading">
+                  <div class="section-header">
+                    <div reveal-anim-1="" class="section-eyebrow">
+                      <div class="eyebrow-dot"></div>
+                      <div class="eyebrow-dot is-top-right"></div>
+                      <div class="eyebrow-dot is-bottom-left"></div>
+                      <div class="eyebrow-dot is-bottom-right"></div>
+                      <div class="section-eyebrow-text">Blogs</div>
+                    </div>
+                    <h2 section-title="" class="heading-style-2">Stay Up To Date With Our Journal</h2>
+                  </div>
+                </div>
+                <a data-wf-target="[[[&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4&quot;,&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4&quot;],[&quot;d66003d7-2382-99c9-d380-df906aba3229&quot;]]]" data-wf-component-id="403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4" data-wf-variant-state="base" {...link('/blogs', 'primary-button w-inline-block')}>
+                  <div class="button-text-mask">
+                    <div data-wf-target="[[[&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4&quot;,&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f6&quot;],[&quot;d66003d7-2382-99c9-d380-df906aba3229&quot;]]]" class="button-text">View All Blogs</div>
+                    <div data-wf-target="[[[&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4&quot;,&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f8&quot;],[&quot;d66003d7-2382-99c9-d380-df906aba3229&quot;]]]" class="button-text is-hover">View All Blogs</div>
+                  </div>
+                  <div data-wf-target="[[[&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4&quot;,&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34fa&quot;],[&quot;d66003d7-2382-99c9-d380-df906aba3229&quot;]]]" class="button-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 16 15" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="10.666" cy="3.2" r="1.067"></circle>
+                      <circle cx="8.533" cy="1.067" r="1.067"></circle>
+                      <circle cx="14.933" cy="7.466" r="1.067"></circle>
+                      <circle cx="1.067" cy="7.466" r="1.067"></circle>
+                      <circle cx="4.268" cy="7.466" r="1.067"></circle>
+                      <circle cx="7.467" cy="7.466" r="1.067"></circle>
+                      <circle cx="10.666" cy="7.466" r="1.067"></circle>
+                      <circle cx="12.8" cy="9.6" r="1.067"></circle>
+                      <circle cx="10.666" cy="11.733" r="1.067"></circle>
+                      <circle cx="8.533" cy="13.866" r="1.067"></circle>
+                      <circle cx="12.8" cy="5.333" r="1.067"></circle>
+                    </svg></div>
+                </a>
+              </div>
+              <div class="blog-v3-list-wrapper w-dyn-list">
+  {
+    posts.length > 0 ? (
+      <div data-reveal="stagger" role="list" class="blog-v3-list w-dyn-items">
+        {posts.map((post) => (
+          <div role="listitem" class="blog-v3-item w-dyn-item">
+                    <div class="blog-v3-card">
+                      <a tabindex="-1" aria-label="blog-v3-image-link" {...link(postUrl(post.slug), 'blog-v3-image-link w-inline-block')}><img src={post.thumbnail?.url} loading="lazy" aria-label="blog-v3-image" alt={post.thumbnail?.alt} class="blog-v3-image"></a>
+                      <div class="blog-v3-overlay"></div>
+                      <div class="blog-v3-body">
+                        <div class="blog-v3-meta">
+                          <div class="blog-v3-date">{formatDate(post.publishedDate)}</div>
+                          <div class="blog-v3-category">{post.category}</div>
+                        </div>
+                        <div class="blog-v3-title-row">
+                          <a {...link(postUrl(post.slug), 'blog-v3-title-link w-inline-block')}>
+                            <h3 aria-label="blog-v3-title" class="blog-v3-title">{post.title}</h3>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="blog-v3-arrow">
+                        <div class="blog-v3-arrow-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M4.5 11.5l7-7M5.5 4.5h6v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg></div>
+                      </div>
+                    </div>
+                  </div>
+        ))}
+      </div>
+    ) : (
+      <div class="w-dyn-empty">
+                  <div>No items found.</div>
+                </div>
+    )
+  }
+</div>
+            </div>
+          </div>
+        </div>
+      </section>

@@ -1,0 +1,54 @@
+---
+import { linkFor } from '@/lib/links';
+import type { Career } from '@/lib/content';
+const link = linkFor(Astro.url.pathname);
+interface Props {
+  entry: Career;
+}
+const { entry } = Astro.props;
+---
+
+<section class="section_career-hero">
+        <div class="section-gap is-small">
+          <div class="container-main">
+            <div class="detail-hero-wrapper">
+              <div class="detail-hero-top">
+                <div page-load-1="" class="blog-hero-back">
+                  <a data-wf-target="[[[&quot;dc30b107-6718-b05a-ca3b-e4e8cecd0d95&quot;,&quot;dc30b107-6718-b05a-ca3b-e4e8cecd0d95&quot;],[&quot;5ff40cd0-986c-4b57-79b6-411fae78f4ec&quot;]]]" data-wf-component-id="dc30b107-6718-b05a-ca3b-e4e8cecd0d95" data-wf-variant-state="base" {...link('/careers', 'back-link w-inline-block')}>
+                    <div data-wf-target="[[[&quot;dc30b107-6718-b05a-ca3b-e4e8cecd0d95&quot;,&quot;dc30b107-6718-b05a-ca3b-e4e8cecd0d99&quot;],[&quot;5ff40cd0-986c-4b57-79b6-411fae78f4ec&quot;]]]" class="button-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 16 15" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="matrix(-1 0 0 1 16 0)">
+                          <circle cx="10.666" cy="3.2" r="1.067"></circle>
+                          <circle cx="8.533" cy="1.067" r="1.067"></circle>
+                          <circle cx="14.933" cy="7.466" r="1.067"></circle>
+                          <circle cx="1.067" cy="7.466" r="1.067"></circle>
+                          <circle cx="4.268" cy="7.466" r="1.067"></circle>
+                          <circle cx="7.467" cy="7.466" r="1.067"></circle>
+                          <circle cx="10.666" cy="7.466" r="1.067"></circle>
+                          <circle cx="12.8" cy="9.6" r="1.067"></circle>
+                          <circle cx="10.666" cy="11.733" r="1.067"></circle>
+                          <circle cx="8.533" cy="13.866" r="1.067"></circle>
+                          <circle cx="12.8" cy="5.333" r="1.067"></circle>
+                        </g>
+                      </svg></div>
+                    <div class="button-text-mask">
+                      <div data-wf-target="[[[&quot;dc30b107-6718-b05a-ca3b-e4e8cecd0d95&quot;,&quot;dc30b107-6718-b05a-ca3b-e4e8cecd0d97&quot;],[&quot;5ff40cd0-986c-4b57-79b6-411fae78f4ec&quot;]]]" class="button-text">All Jobs</div>
+                      <div data-wf-target="[[[&quot;dc30b107-6718-b05a-ca3b-e4e8cecd0d95&quot;,&quot;dc30b107-6718-b05a-ca3b-e4e8cecd0d98&quot;],[&quot;5ff40cd0-986c-4b57-79b6-411fae78f4ec&quot;]]]" class="button-text is-hover">All Jobs</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="detail-hero-header is-top">
+                  <div class="detail-hero-heading">
+                    <h1 hero-title="" class="heading-style-1">{entry.title}</h1>
+                    <div page-load-2="" class="career-card-meta">
+                      <div class="text-size-regular">{entry.location}</div>
+                      <div class="career-card-meta-dot"></div>
+                      <div class="text-size-regular">{entry.experience}</div>
+                    </div>
+                  </div>
+                  <p page-load-3="" class="detail-hero-summary">{entry.summary}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

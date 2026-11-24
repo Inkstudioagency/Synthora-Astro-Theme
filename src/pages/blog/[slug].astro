@@ -1,0 +1,29 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import DetailHero from '@/components/sections/blog-post/DetailHero.astro';
+import DetailBody from '@/components/sections/blog-post/DetailBody.astro';
+import Cta from '@/components/sections/shared/Cta.astro';
+
+export const getStaticPaths = (async () => {
+  const entries = await getCollection('blogPosts');
+  return entries.map(({ data }) => ({ params: { slug: data.slug }, props: { entry: data } }));
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props;
+---
+
+<BaseLayout
+  wfPage="6b03d9375de33e5d414c2687"
+  title={entry.seo.metaTitle ?? entry.title}
+  description={entry.seo.metaDescription ?? entry.excerpt}
+  image={entry.seo.metaImage?.url ?? entry.thumbnail?.url}
+  type="article"
+>
+  <DetailHero entry={entry} />
+  <DetailBody entry={entry} />
+  <div class="section-divider"></div>
+  <Cta />
+  <div class="section-divider"></div>
+</BaseLayout>

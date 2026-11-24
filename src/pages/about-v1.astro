@@ -1,0 +1,38 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import AboutHero from '@/components/sections/about-v1/AboutHero.astro';
+import AboutImage from '@/components/sections/about-v1/AboutImage.astro';
+import HomeLogos from '@/components/sections/shared/HomeLogos.astro';
+import AboutMission from '@/components/sections/about-v1/AboutMission.astro';
+import AboutSecurity from '@/components/sections/about-v1/AboutSecurity.astro';
+import AboutTeam from '@/components/sections/about-v1/AboutTeam.astro';
+import HomeStats from '@/components/sections/shared/HomeStats.astro';
+import HomeTestimonials from '@/components/sections/shared/HomeTestimonials.astro';
+import HomeBlog from '@/components/sections/shared/HomeBlog.astro';
+import Cta from '@/components/sections/shared/Cta.astro';
+---
+
+<BaseLayout
+  wfPage="6b03d9375de33e5d414c268a"
+  title="About Us - The Team Behind AI Automation | Synthora"
+  description="Meet the team behind Synthora, the AI agent automation platform. Learn our story, mission, values and the numbers that show how we help teams ship faster."
+>
+  <AboutHero />
+  <AboutImage />
+  <HomeLogos />
+  <div class="section-divider"></div>
+  <AboutMission />
+  <div class="section-divider"></div>
+  <AboutSecurity />
+  <div class="section-divider"></div>
+  <AboutTeam />
+  <div class="section-divider"></div>
+  <HomeStats />
+  <div class="section-divider"></div>
+  <HomeTestimonials />
+  <div class="section-divider"></div>
+  <HomeBlog headingReveal imageLinkClass="blog-card-image-wrapper" />
+  <div class="section-divider"></div>
+  <Cta />
+  <div class="section-divider"></div>
+</BaseLayout>

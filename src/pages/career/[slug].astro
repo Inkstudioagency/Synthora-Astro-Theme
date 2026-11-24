@@ -1,0 +1,33 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import CareerHero from '@/components/sections/career/CareerHero.astro';
+import DetailBody from '@/components/sections/career/DetailBody.astro';
+import CareersPositions from '@/components/sections/career/CareersPositions.astro';
+import HomeFaq from '@/components/sections/shared/HomeFaq.astro';
+import Cta from '@/components/sections/shared/Cta.astro';
+
+export const getStaticPaths = (async () => {
+  const entries = await getCollection('careers');
+  return entries.map(({ data }) => ({ params: { slug: data.slug }, props: { entry: data } }));
+}) satisfies GetStaticPaths;
+
+const { entry } = Astro.props;
+---
+
+<BaseLayout
+  wfPage="6b03d9375de33e5d414c269a"
+  title={entry.seo.metaTitle ?? entry.title}
+  description={entry.seo.metaDescription ?? entry.summary}
+  image={entry.seo.metaImage?.url}
+>
+  <CareerHero entry={entry} />
+  <DetailBody entry={entry} />
+  <div class="section-divider"></div>
+  <CareersPositions />
+  <div class="section-divider"></div>
+  <HomeFaq />
+  <div class="section-divider"></div>
+  <Cta />
+</BaseLayout>

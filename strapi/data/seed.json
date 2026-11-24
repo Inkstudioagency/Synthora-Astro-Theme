@@ -1,0 +1,4083 @@
+{
+  "$comment": "Demo content for the Synthora theme, imported into Strapi by `npm run seed` and used by the Astro site when STRAPI_URL is not set. Entries are listed in creation order (oldest first). Image fields hold keys of `media`, whose files are in data/uploads. An empty alt means the site builds the alternative text from the entry (title, company or person name), like the original template.",
+  "media": {
+    "synthora-blog-visor": {
+      "file": "synthora-blog-visor.webp",
+      "alt": "Woman wearing a transparent AR visor with data overlays",
+      "width": 822,
+      "height": 748
+    },
+    "synthora-avatar-1": {
+      "file": "synthora-avatar-1.webp",
+      "alt": "",
+      "width": 96,
+      "height": 96
+    },
+    "synthora-v2-feature-agent": {
+      "file": "synthora-v2-feature-agent.webp",
+      "alt": "Synthora agent chat panel with model selector and send button",
+      "width": 1724,
+      "height": 1160
+    },
+    "synthora-blog-particles": {
+      "file": "synthora-blog-particles.webp",
+      "alt": "Abstract portrait dissolving into glowing particles",
+      "width": 820,
+      "height": 748
+    },
+    "synthora-avatar-2": {
+      "file": "synthora-avatar-2.webp",
+      "alt": "",
+      "width": 96,
+      "height": 96
+    },
+    "synthora-careers-workspace": {
+      "file": "synthora-careers-workspace.webp",
+      "alt": "Engineer reviewing code and a web app on two monitors",
+      "width": 1044,
+      "height": 662
+    },
+    "synthora-blog-glitch": {
+      "file": "synthora-blog-glitch.webp",
+      "alt": "Portrait of a man behind glitching light streaks",
+      "width": 822,
+      "height": 748
+    },
+    "synthora-v2-industry": {
+      "file": "synthora-v2-industry.webp",
+      "alt": "Two operations managers reviewing a delivery schedule on a whiteboard",
+      "width": 1294,
+      "height": 926
+    },
+    "synthora-v2-feature-impact": {
+      "file": "synthora-v2-feature-impact.webp",
+      "alt": "Dashboard panel showing efficiency, cost savings, support and growth percentages",
+      "width": 1724,
+      "height": 1160
+    },
+    "synthora-v3-promo": {
+      "file": "synthora-v3-promo.webp",
+      "alt": "Developer concentrating on a desktop monitor in a dim office",
+      "width": 2880,
+      "height": 1556
+    },
+    "synthora-about-v3-hero": {
+      "file": "synthora-about-v3-hero.webp",
+      "alt": "Finance team reviewing documents together around a large office table",
+      "width": 2560,
+      "height": 1284
+    },
+    "open-graph-image-3": {
+      "file": "open-graph-image-3.webp",
+      "alt": "",
+      "width": 1200,
+      "height": 630
+    },
+    "synthora-v3-case-epicurious": {
+      "file": "synthora-v3-case-epicurious.webp",
+      "alt": "",
+      "width": 720,
+      "height": 662
+    },
+    "logo-leapyear": {
+      "file": "logo-leapyear.svg",
+      "alt": "",
+      "width": 111,
+      "height": 33
+    },
+    "synthora-v3-avatar-elena": {
+      "file": "synthora-v3-avatar-elena.webp",
+      "alt": "",
+      "width": 80,
+      "height": 80
+    },
+    "synthora-v2-feature-fallback": {
+      "file": "synthora-v2-feature-fallback.webp",
+      "alt": "Synthora agent comparing answer engines while it works on a task",
+      "width": 1724,
+      "height": 1160
+    },
+    "synthora-contact-support": {
+      "file": "synthora-contact-support.webp",
+      "alt": "",
+      "width": 1140,
+      "height": 1350
+    },
+    "synthora-v3-case-capsule": {
+      "file": "synthora-v3-case-capsule.webp",
+      "alt": "",
+      "width": 720,
+      "height": 662
+    },
+    "logo-capsule": {
+      "file": "logo-capsule.svg",
+      "alt": "",
+      "width": 106,
+      "height": 34
+    },
+    "synthora-v3-avatar-marcus": {
+      "file": "synthora-v3-avatar-marcus.webp",
+      "alt": "",
+      "width": 80,
+      "height": 80
+    },
+    "synthora-office-interior": {
+      "file": "synthora-office-interior.webp",
+      "alt": "",
+      "width": 1216,
+      "height": 920
+    },
+    "synthora-v3-case-hexsmith": {
+      "file": "synthora-v3-case-hexsmith.webp",
+      "alt": "",
+      "width": 720,
+      "height": 662
+    },
+    "logo-foresight": {
+      "file": "logo-foresight.svg",
+      "alt": "",
+      "width": 116,
+      "height": 34
+    },
+    "synthora-v3-avatar-olivia": {
+      "file": "synthora-v3-avatar-olivia.webp",
+      "alt": "",
+      "width": 80,
+      "height": 80
+    },
+    "case-study-image-1": {
+      "file": "case-study-image-1.webp",
+      "alt": "",
+      "width": 819,
+      "height": 501
+    },
+    "synthora-v3-case-cubekit": {
+      "file": "synthora-v3-case-cubekit.webp",
+      "alt": "",
+      "width": 720,
+      "height": 662
+    },
+    "logo-railspeed": {
+      "file": "logo-railspeed.svg",
+      "alt": "",
+      "width": 116,
+      "height": 33
+    },
+    "synthora-v3-avatar-daniel": {
+      "file": "synthora-v3-avatar-daniel.webp",
+      "alt": "",
+      "width": 80,
+      "height": 80
+    },
+    "synthora-v2-feature-stack": {
+      "file": "synthora-v2-feature-stack.webp",
+      "alt": "Synthora connecting business apps and importing order data",
+      "width": 1724,
+      "height": 1160
+    }
+  },
+  "blogPosts": [
+    {
+      "title": "Introducing Synthora 2.0 with multi-agent workflows",
+      "slug": "introducing-synthora-2-0",
+      "category": "Announcements",
+      "publishedDate": "2026-10-02",
+      "excerpt": "Synthora 2.0 lets several AI agents share context, hand off tasks and report back in one workflow, so complex processes run end to end without code.",
+      "lead": "Synthora 2.0 is here, and it changes how teams automate work: several agents can now plan, act and report as one team.",
+      "thumbnail": "synthora-blog-visor",
+      "author": {
+        "name": "Maya Chen",
+        "photo": "synthora-avatar-1"
+      },
+      "readTime": "6 min read",
+      "featured": true,
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "For the past year, most customers used Synthora to run one capable agent per task. That worked well for focused jobs, but real business processes rarely stop at one step. Version 2.0 introduces multi-agent workflows, shared memory and full run timelines, so complex processes can run end to end without custom glue code."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Why Multi-Agent Workflows Matter"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A support escalation needs triage, research, drafting and approval. Until now, teams stitched those steps together with scripts and webhooks that broke whenever a prompt changed. In 2.0, each step is an agent with its own model, tools and guardrails, and Synthora handles every handoff between them."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "synthora-v2-feature-agent",
+            "alt": "Synthora agent chat panel with model selector and send button"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Shared Context Without the Glue Code"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Agents in the same workflow now read from and write to a shared memory. Each one sees exactly the context it needs, and nothing more."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "That means the research agent can pass verified facts to the drafting agent, which can pass a finished reply to the reviewer, without anyone copying data between systems. Permissions still apply at every step, so sensitive records stay with the agents allowed to see them."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Shared memory is versioned per run. If something goes wrong, you can replay the workflow from any step with the same inputs and compare the results side by side."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Every Run Is Traceable From Start to Finish"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The new timeline view shows which agent did what, which tools it called and how long each step took. Costs, retries and approvals appear on the same screen, so reviews take minutes instead of hours."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Compliance teams can export any run as a complete audit record. Engineering teams can use the same view to spot slow steps, noisy prompts and tools that fail more often than they should."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "How to Get Started With Version 2.0"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Existing workflows keep running exactly as they are, and nothing changes until you choose to upgrade. When you are ready, open any workflow, choose Add agent and connect it to a step."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Our migration guide walks through the most common patterns, from a simple triage-and-reply flow to a multi-step approval chain, in under fifteen minutes. Multi-agent workflows are available today on every paid plan, and Enterprise customers can enable shared memory controls per workspace. We cannot wait to see what your teams build, so share your first workflow with us."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "How to design reliable fallback chains for AI agents",
+      "slug": "reliable-fallback-chains",
+      "category": "Guidance",
+      "publishedDate": "2026-09-18",
+      "excerpt": "Model outages and rate limits are inevitable. Learn how to rank models, set timeouts and test chains so agents keep answering when a provider fails.",
+      "lead": "Every model provider has bad days. A well-designed fallback chain makes those incidents invisible to the people who rely on your agents.",
+      "thumbnail": "synthora-blog-particles",
+      "author": {
+        "name": "Daniel Okafor",
+        "photo": "synthora-avatar-2"
+      },
+      "readTime": "8 min read",
+      "featured": true,
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Rate limits spike, latency climbs and, once in a while, an endpoint goes down completely. When that happens, your agent needs a clear answer to one question: what should it do next? A fallback chain is that answer. It defines which model takes over, how quickly the switch happens and how you confirm the result is still correct."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Rank Models by Job, Not by Brand"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Start with the task rather than the provider. For extraction and classification, a smaller and faster model often beats a large one. Put the model that best fits the job first, then add one or two alternatives that return the same output format, so downstream steps never break."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "synthora-careers-workspace",
+            "alt": "Engineer reviewing code and a web app on two monitors"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Set Timeouts You Can Live With"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A fallback only helps if it fires in time. Waiting thirty seconds for a stalled model before switching is often worse than failing fast."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Set a per-step timeout based on your user experience budget. A live chat reply might allow four seconds, while an overnight report can wait much longer. When the limit is reached, Synthora retries on the next model in the chain immediately and records the switch in the run timeline."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Keep retries on the same model to a minimum. Repeating a request against an overloaded endpoint usually adds delay without improving the chance of success."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Keep Outputs Consistent Across Models"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Different models phrase things differently, and some ignore formatting instructions more often than others. If your next step expects valid JSON, a creative answer from a backup model can break the entire workflow."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Use structured output schemas and validation rules on every step. When a fallback model returns something that does not match, Synthora can repair the format automatically or move to the next option before anything reaches a customer."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Test the Unhappy Path Before It Happens"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Most teams test the happy path thoroughly and simply assume the fallback will work. The first real outage is a bad time to find out it does not."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Use simulation mode to force failures on the primary model and confirm that outputs from each backup still pass your validation rules. Track how often each fallback fires in production, because a backup that runs every day is really your primary model. Run these tests before every major prompt change, and review your chain whenever a provider releases a new model version."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "What the shift to agentic AI means for operations teams",
+      "slug": "agentic-ai-for-operations",
+      "category": "Industry",
+      "publishedDate": "2026-09-04",
+      "excerpt": "AI agents are moving from chat windows into core operations. We look at where teams see the fastest returns and which skills matter as work shifts to oversight.",
+      "lead": "AI has moved out of the chat window and into the systems that run a business. Operations teams are feeling the change first.",
+      "thumbnail": "synthora-blog-glitch",
+      "author": {
+        "name": "Priya Raman",
+        "photo": "synthora-avatar-1"
+      },
+      "readTime": "7 min read",
+      "featured": false,
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Over the past year, agents have started to reconcile invoices, route tickets, schedule deliveries and prepare reports with little human input. For operations leaders, this is not just another tool rollout. It changes what the team spends its time on, which skills matter most and how success should be measured."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Where the Returns Show Up First"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The fastest wins come from high-volume, rules-heavy work: data entry, triage, scheduling and first-draft documentation. These tasks have clear inputs and clear outputs, so time savings are easy to measure from the first week, and mistakes are easy to spot during review."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "synthora-v2-industry",
+            "alt": "Two operations managers reviewing a delivery schedule on a whiteboard"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "From Doing the Work to Supervising It"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "As agents take on routine steps, operations roles shift from completing tasks to designing the workflows that complete them."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "That means writing clear instructions, deciding which actions need approval and reviewing the exceptions an agent cannot resolve on its own. The best operators become editors of automated work. They know where an agent is reliable, where it struggles and when a human should step in."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Teams that invest in these skills early scale automation with far fewer surprises. Teams that skip them often end up rebuilding workflows after the first serious mistake."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Guardrails Build Trust Across the Business"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Finance, legal and security teams will all ask the same question: how do we know the agent did the right thing? Operations needs a confident answer before automation can expand."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Approval steps, spending limits and full run logs provide that answer. When every action is traceable to its inputs and reasoning, other departments stop treating agents as a risk and start asking for them."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Measuring What Actually Matters"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Counting automated tasks is tempting, but it says little about real impact. A busy agent is not always a useful one, and volume can easily hide quality problems."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Track cycle time, error rate and the share of cases resolved without escalation instead. Those three numbers show whether an agent is genuinely helping or simply moving work around. Review them monthly with the people who handle exceptions, because they see failure patterns long before a dashboard does, and their feedback is the quickest route to better workflows."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Inside the new cost dashboard: track spend per agent",
+      "slug": "cost-dashboard-per-agent",
+      "category": "Product",
+      "publishedDate": "2026-08-21",
+      "excerpt": "The new cost dashboard breaks down token usage and spend by agent, model and workflow, with budgets and alerts that stop runaway costs before invoices arrive.",
+      "lead": "AI costs are easy to underestimate and hard to explain. The new cost dashboard shows exactly where every token goes.",
+      "thumbnail": "synthora-blog-visor",
+      "author": {
+        "name": "Lucas Meyer",
+        "photo": "synthora-avatar-2"
+      },
+      "readTime": "5 min read",
+      "featured": false,
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "As teams move from one agent to dozens, spend becomes difficult to follow. Invoices arrive as a single number per provider, with no link to the workflows that created them. The cost dashboard in Synthora breaks usage down by agent, model, workflow and team, so finance and engineering finally look at the same figures."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "See Spend Where It Happens"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Every run now records the tokens it used, the model it called and the price at the time of the request. The dashboard rolls those records up into daily trends, so a sudden spike points straight to the workflow and step that caused it."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "synthora-v2-feature-impact",
+            "alt": "Dashboard panel showing efficiency, cost savings, support and growth percentages"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Budgets and Alerts That Act for You"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Set a monthly budget for any agent, workflow or team. Synthora alerts the owners at 50, 80 and 100 percent of the limit."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Alerts are only useful if someone can act on them in time. That is why budgets can also trigger automatic actions: switch a workflow to a cheaper model, pause non-critical runs or require approval before new jobs start. Each action is logged, so nobody is surprised later."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Budgets reset on the date you choose, and unused allowance never rolls over silently. Owners always know exactly how much remains for the month."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Compare Models Side by Side"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The comparison view shows the cost per successful run for every model you use. It accounts for retries and fallbacks, which often double the real price of a cheap model."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "With that data, it becomes easy to see when a smaller model delivers the same quality at a fraction of the cost. Many teams find at least one workflow where switching models cuts spend by half without any change in results."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Share Clear Reports With Finance"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Finance teams want predictable numbers and clear ownership. The dashboard gives them both without asking engineers to build spreadsheets every month."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Export monthly reports by team or cost centre, or connect the dashboard to your accounting tools through the Synthora API. Each line item links back to the agents and workflows behind it, so questions about an unexpected charge take minutes to answer. The cost dashboard is available today on every plan, with historical data already backfilled for the last ninety days."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Five testing habits that keep AI agents production-ready",
+      "slug": "testing-habits-for-ai-agents",
+      "category": "Guidance",
+      "publishedDate": "2026-08-06",
+      "excerpt": "Agents change every time a prompt, tool or model changes. These five testing habits help teams catch regressions early and ship agent updates with confidence.",
+      "lead": "AI agents change every time a prompt, tool or model changes. Good testing habits keep those changes from reaching users as surprises.",
+      "thumbnail": "synthora-blog-particles",
+      "author": {
+        "name": "Sofia Alvarez",
+        "photo": "synthora-avatar-1"
+      },
+      "readTime": "6 min read",
+      "featured": false,
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Traditional software tests assume the same input always produces the same output. Agents do not work that way, and that leads many teams to skip testing altogether. That is a mistake. Agents can be tested well, as long as the tests focus on behaviour and run every single time something changes."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "1. Keep a Golden Dataset"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Collect real examples with known good answers and run them against every change. Fifty well-chosen cases catch most regressions. Include common requests, tricky edge cases and the failures that have already reached production, so old mistakes never return."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "synthora-v3-promo",
+            "alt": "Developer concentrating on a desktop monitor in a dim office"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "2. Test Behaviour, Not Wording"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Two correct answers can look very different. Exact text matching fails constantly and teaches teams to ignore their tests."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Instead, check that each answer contains the right facts, calls the right tool and follows the right format. Synthora evaluators can score answers against a rubric, so a reply that is phrased differently but still correct passes, while a confident wrong answer fails."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "3. Version Prompts Like Code"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Every prompt change should be reviewed, versioned and easy to roll back. A single extra sentence can change how an agent behaves across thousands of runs."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Synthora stores prompt history for each agent automatically and runs your golden dataset before a new version goes live. If scores drop, the release stops until someone reviews it."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "4. Run Adversarial Cases"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Include confusing, incomplete and hostile inputs in every test run. Ask questions the agent should refuse and make requests that should trigger a human handoff. You will learn how the agent fails before your users find out."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "5. Watch Production Closely"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Testing does not end at launch. Real users ask questions no dataset predicted, and model providers update their systems without warning."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Sample live runs every week, label the interesting ones and add the failures to your golden dataset. Over time, that loop turns a small test suite into a reliable picture of how your agent performs in the real world. Testing is a habit, not a launch checklist."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Why finance teams are automating month-end close with AI",
+      "slug": "finance-month-end-close-automation",
+      "category": "Industry",
+      "publishedDate": "2026-07-23",
+      "excerpt": "Month-end close is repetitive, deadline-driven and full of reconciliations. See how finance teams use AI agents to cut close time and keep a full audit trail.",
+      "lead": "Month-end close repeats every month, follows strict rules and runs against a hard deadline. That makes it ideal for automation.",
+      "thumbnail": "synthora-blog-glitch",
+      "author": {
+        "name": "Ethan Brooks",
+        "photo": "synthora-avatar-2"
+      },
+      "readTime": "7 min read",
+      "featured": false,
+      "body": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Finance teams spend days each month matching transactions, chasing missing documents and preparing journal entries. The work is important, but much of it is repetitive. AI agents now handle large parts of the close, giving accountants more time for analysis and review while keeping every step visible to auditors."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Reconciliations in Minutes, Not Days"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Agents match transactions across bank feeds, ledgers and invoices, flag mismatches and draft journal entries for review. Work that once took several days now takes a few hours, and the exceptions arrive already sorted by size and urgency."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "synthora-about-v3-hero",
+            "alt": "Finance team reviewing documents together around a large office table"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Audit Trails by Default"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Every action an agent takes is logged with its inputs, its reasoning and its output. Nothing happens off the record."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Auditors can trace each entry back to its source document without extra paperwork or follow-up emails. Instead of sampling a handful of transactions and hoping they are representative, reviewers can inspect any entry in seconds. Many teams find their audits become shorter and far less stressful."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Logs are kept for as long as your retention policy requires, and access to them follows the same permissions as the ledger itself."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Humans Stay in Control"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Agents prepare and propose; people approve. Approval steps in Synthora workflows make sure nothing posts to the ledger without a sign-off from the right person."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Controllers decide which entries need review, which thresholds trigger escalation and which accounts agents may never touch. The rules sit in one place, so changing a policy takes minutes instead of a new round of training."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Where to Start With Your Close"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Pick one high-volume task with clear rules, such as bank reconciliation or accrual preparation. Run the agent alongside your current process for one full close before changing anything."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Compare the results line by line, fix the gaps and write down what the agent should escalate. Once the outputs match, let the agent take the first pass while your team reviews. Most finance teams expand to a second task within a quarter, and many cut their close time by several days within the first year."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "careers": [
+    {
+      "title": "Client Relations Manager",
+      "slug": "client-relations-manager",
+      "location": "Remote",
+      "experience": "1-3 Years",
+      "summary": "Own relationships with our mid-market customers, guide onboarding and renewals, and turn feedback into clear priorities for the product team.",
+      "employmentType": "Full time",
+      "workingDays": "Mon - Fri",
+      "salary": "55,000-70,000 USD",
+      "description": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Job Description"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "We're looking for a Client Relations Manager to be the trusted point of contact for a growing portfolio of Synthora customers. You'll guide teams from their first workflow to renewal, make sure every account sees measurable value from its AI agents, and turn what you hear from customers into clear priorities that shape our product roadmap."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Responsibilities"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Run onboarding sessions that get new accounts live with their first agent workflows."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Hold regular business reviews that connect automation results to customer goals."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Track adoption and usage, and step in early when engagement starts to drop."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Turn customer feedback into clear, prioritised requests for product and engineering."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Own renewals for your portfolio and spot natural expansion opportunities."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Coordinate with support to resolve escalations quickly and keep customers informed."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Build account plans that map stakeholders, success metrics and next steps."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Write playbooks and help articles that make the whole team work faster."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Share customer stories and wins with marketing and leadership every month."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Requirements"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "1-3 years in account management or customer success"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Experience with a B2B SaaS product"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Clear written and spoken communication"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Comfort with data, dashboards and CRM tools"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "A calm, problem-solving mindset"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Strong organisation across many accounts"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Genuine curiosity about AI and automation"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Ability to explain technical ideas simply"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Fluent business-level English"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "What We Offer"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Remote-first team with flexible hours"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Competitive salary and stock options"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Private health, dental and vision cover"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "25 days of paid time off plus holidays"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Yearly learning and conference budget"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Home office setup allowance"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Monthly wellness stipend"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Twice-yearly team offsites"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Clear career path into account leadership"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "seo": {
+        "metaImage": "open-graph-image-3"
+      }
+    },
+    {
+      "title": "Business Development Lead",
+      "slug": "business-development-lead",
+      "location": "Remote",
+      "experience": "3-5 Years",
+      "summary": "Lead outbound strategy, open new markets and build a repeatable pipeline of enterprise teams that want to automate their workflows with agents.",
+      "employmentType": "Full time",
+      "workingDays": "Mon - Fri",
+      "salary": "80,000-110,000 USD",
+      "description": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Job Description"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "As Business Development Lead, you'll design and run the outbound motion that brings new enterprise teams to Synthora. You'll define who we target, coach a small team of development representatives and test the messages that open valuable conversations. Working closely with marketing and sales, you'll build a repeatable, measurable pipeline for teams ready to automate with AI agents."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Responsibilities"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Define target segments and build focused account lists with marketing."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Coach and mentor a small team of business development representatives."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Design outbound sequences across email, phone, LinkedIn and events."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Test messaging and channels, then scale the approaches that convert best."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Qualify opportunities and hand them to account executives with full context."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Report pipeline health, conversion rates and forecasts to leadership weekly."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Partner with product marketing on launches and new campaign themes."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Keep the CRM accurate so every team trusts the pipeline data."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Share market insights and objections with product and sales teams."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Requirements"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "3-5 years in B2B SaaS business development"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Experience leading or mentoring a team"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Proven record of hitting pipeline targets"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Strong analytical and reporting skills"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Confident, clear communication"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Hands-on experience with modern CRM tools"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Comfort selling to technical buyers"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Curiosity about AI and automation"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "A test-and-learn mindset"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "What We Offer"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Remote-first team with flexible hours"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Competitive base salary plus commission"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Meaningful stock options"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Private health, dental and vision cover"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "25 days of paid time off plus holidays"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Yearly learning and conference budget"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Home office setup allowance"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Twice-yearly team offsites"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "A path to head of growth"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "seo": {
+        "metaImage": "open-graph-image-3"
+      }
+    },
+    {
+      "title": "Sales Strategist",
+      "slug": "sales-strategist",
+      "location": "Remote",
+      "experience": "1-3 Years",
+      "summary": "Shape pricing experiments, sales playbooks and competitive positioning so our account executives can close complex automation deals with confidence.",
+      "employmentType": "Full time",
+      "workingDays": "Mon - Fri",
+      "salary": "60,000-80,000 USD",
+      "description": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Job Description"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The Sales Strategist gives our revenue team the insight, structure and tools it needs to win complex automation deals. You'll analyse our pipeline, refine sales playbooks, support pricing experiments and keep our positioning sharp in a fast-moving AI market. It's a role for someone who loves data, clear writing and helping account executives close with confidence."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Responsibilities"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Analyse won and lost deals and share practical lessons with the team."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Maintain battle cards, competitor notes and objection-handling guides."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Design and track pricing and packaging experiments with finance and product."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Build sales playbooks for key segments, use cases and buying stages."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Create onboarding and enablement material for new account executives."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Support forecasting with clean pipeline analysis and clear reporting."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Prepare proposals and business cases for strategic enterprise deals."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Run quarterly territory and quota planning with sales leadership."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Track market trends and turn them into timely positioning updates."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Requirements"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "1-3 years in sales operations or strategy"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Background in B2B SaaS or consulting"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Advanced spreadsheet and CRM reporting skills"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Clear, structured writing"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Strong problem-solving mindset"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Ability to work across many teams"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Attention to detail under deadlines"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Interest in AI and workflow automation"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Willingness to learn and grow"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "What We Offer"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Remote-first team with flexible hours"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Competitive salary and stock options"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Performance bonus every year"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Private health, dental and vision cover"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "25 days of paid time off plus holidays"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Yearly learning and conference budget"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Home office setup allowance"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Monthly wellness stipend"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Twice-yearly team offsites"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "seo": {
+        "metaImage": "open-graph-image-3"
+      }
+    },
+    {
+      "title": "Customer Success Manager",
+      "slug": "customer-success-manager",
+      "location": "Remote",
+      "experience": "2-4 Years",
+      "summary": "Help enterprise customers design, launch and scale agent workflows, measure the results and become long-term champions of the Synthora platform.",
+      "employmentType": "Full time",
+      "workingDays": "Mon - Fri",
+      "salary": "65,000-85,000 USD",
+      "description": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Job Description"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "We're looking for a Customer Success Manager to partner with our largest enterprise customers as they plan, launch and scale AI agent workflows. You'll be their strategic guide, running workshops, tracking outcomes and removing blockers. Success in this role means customers reach their goals faster, automate more of their work and become long-term champions of the Synthora platform."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Responsibilities"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Build success plans with clear goals, milestones and owners for each account."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Lead workshops that map manual processes to automated agent workflows."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Monitor health scores and act quickly on adoption or renewal risks."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Run executive business reviews that show measurable automation results."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Guide customers through integrations with support and solutions engineers."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Share best practice through guides, webinars and customer community sessions."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Represent the customer voice in product and roadmap discussions."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Identify expansion opportunities and partner with sales to close them."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Document repeatable processes that help the success team scale."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Requirements"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "2-4 years in customer success"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Experience with a technical SaaS product"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Confidence with enterprise stakeholders"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Basic understanding of APIs and integrations"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Strong presentation skills"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Empathy and excellent organisation"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Data-driven approach to account health"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Problem-solving mindset"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Willingness to learn and grow"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "What We Offer"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Remote-first team with flexible hours"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Competitive salary and stock options"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Private health, dental and vision cover"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "25 days of paid time off plus holidays"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Yearly learning and certification budget"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Home office setup allowance"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Monthly wellness stipend"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Twice-yearly team offsites"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Clear path into success leadership"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "seo": {
+        "metaImage": "open-graph-image-3"
+      }
+    },
+    {
+      "title": "Partnerships Coordinator",
+      "slug": "partnerships-coordinator",
+      "location": "Remote",
+      "experience": "1-3 Years",
+      "summary": "Coordinate our integration and agency partners, keep joint launches on track and make it simple for partners to build and sell with Synthora.",
+      "employmentType": "Full time",
+      "workingDays": "Mon - Fri",
+      "salary": "50,000-65,000 USD",
+      "description": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Job Description"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The Partnerships Coordinator keeps our partner programme organised, friendly and moving forward. You'll support integration partners and agencies from first contact to joint launch, keeping timelines, documentation and communication on track. Working with marketing, product and sales, you'll make it simple for partners to build on Synthora, sell it to their clients and grow alongside us."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Responsibilities"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Manage partner onboarding, agreements and welcome documentation."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Plan co-marketing launches with clear owners, timelines and assets."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Keep the partner directory and integration listings accurate and current."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Schedule regular check-ins and share programme updates with partners."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Track partner-sourced pipeline and report results to the team monthly."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Coordinate certification and training sessions for agency partners."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Collect partner feedback and share it with the product team."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Support partner events, webinars and joint content projects."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Improve programme processes so partners get answers faster."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Requirements"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "1-3 years in partnerships or coordination"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Experience in marketing or project management"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Excellent organisation and follow-through"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Friendly, clear communication"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Ability to manage many priorities"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Comfort with CRM and project tools"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Attention to detail"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Interest in the SaaS and AI ecosystem"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Willingness to learn and grow"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "What We Offer"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Remote-first team with flexible hours"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Competitive salary and stock options"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Private health, dental and vision cover"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "25 days of paid time off plus holidays"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Yearly learning and conference budget"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Home office setup allowance"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Monthly wellness stipend"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Twice-yearly team offsites"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Mentoring from our partnerships lead"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "seo": {
+        "metaImage": "open-graph-image-3"
+      }
+    },
+    {
+      "title": "Market Expansion Specialist",
+      "slug": "market-expansion-specialist",
+      "location": "Remote",
+      "experience": "3-5 Years",
+      "summary": "Research new regions and industries, validate demand with real customers and build the launch plans that take Synthora into its next markets.",
+      "employmentType": "Full time",
+      "workingDays": "Mon - Fri",
+      "salary": "70,000-95,000 USD",
+      "description": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Job Description"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "You'll lead the research and planning behind every new market Synthora enters. This role combines market sizing, customer interviews and hands-on launch work, so you'll move easily between spreadsheets and real conversations. Working with sales, marketing and regional experts, you'll validate demand, shape our go-to-market approach and help bring AI agent automation to teams in new regions."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Responsibilities"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Size new markets and rank opportunities by demand and fit."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Interview prospects and partners to validate real customer needs."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Research competitors, pricing and regulations in each target region."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Write launch plans with sales, marketing and customer success."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Localise messaging and materials with regional experts and translators."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Build local partner and channel shortlists for each new market."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Set launch goals and track early pipeline and adoption results."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Report findings and recommendations to leadership every quarter."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Document a repeatable expansion playbook for future launches."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Requirements"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "3-5 years in strategy or market research"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Experience launching a product in a new region"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Strong quantitative and writing skills"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Confident customer interviewing"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Comfort working independently"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Ability to influence across teams"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "A second language is a plus"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Interest in AI and automation"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Willingness to travel occasionally"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "What We Offer"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Remote-first team with flexible hours"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Competitive salary and stock options"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Private health, dental and vision cover"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "25 days of paid time off plus holidays"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Yearly learning and conference budget"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Travel budget for market research"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Home office setup allowance"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Twice-yearly team offsites"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Room to grow into regional leadership"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "seo": {
+        "metaImage": "open-graph-image-3"
+      }
+    }
+  ],
+  "caseStudies": [
+    {
+      "title": "Leapyear completes a year's worth of test writing in weeks",
+      "slug": "leapyear-test-automation",
+      "summary": "Leapyear used Synthora agents to write and maintain unit tests across hundreds of Java services, lifting code coverage on every critical system and giving engineers back time for the features customers ask for.",
+      "company": "Leapyear",
+      "industry": "Financial services",
+      "companySize": "10,000+",
+      "coverImage": "synthora-careers-workspace",
+      "cardImage": "synthora-v3-case-epicurious",
+      "logo": "logo-leapyear",
+      "stats": [
+        {
+          "value": "100%",
+          "label": "Code coverage increase"
+        },
+        {
+          "value": "90%+",
+          "label": "Time saved writing unit tests"
+        }
+      ],
+      "quote": "Within just six months our coverage doubled, our teams became aligned, and we finally ship changes with the confidence a business that moves money every single day needs.",
+      "quoteAuthor": {
+        "name": "Leslie Alexander",
+        "role": "VP Engineering, Leapyear",
+        "photo": "synthora-v3-avatar-elena"
+      },
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Overview"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Leapyear runs hundreds of internal services that move money for its customers every day. Higher code coverage gives its engineering teams confidence in application stability when they add new code, but writing unit tests by hand had become one of the slowest parts of every release. The company wanted coverage to grow without slowing delivery."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Challenge"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Engineers were spending a large share of each sprint writing repetitive unit tests for Java services, many of them more than a decade old. Coverage was uneven between teams, reviews dragged on, and the riskiest legacy code often had the fewest tests, which made even small changes feel like a gamble before release."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Slow, manual test writing in every sprint"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Uneven coverage between product teams"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Risky releases on legacy Java services"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Solution"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Leapyear connected Synthora agents to its repositories and CI pipeline. For every change, agents read the surrounding code, generate meaningful unit tests, run them against the build and open a pull request for an engineer to review. Model routing sends simple files to faster models and complex logic to stronger ones."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Agents write and update tests on every commit"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Model routing keeps cost predictable"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Reviewers approve changes in minutes"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "synthora-v2-feature-fallback",
+            "alt": "Synthora agent comparing answer engines while it works on a task"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Start with the Riskiest Code"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The rollout began with the services that handle payments and settlements. These had the oldest code, the fewest tests and the highest cost of failure."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Instead of asking teams to pause feature work, agents generated a baseline test suite for each service in the background. Engineers reviewed the results in small batches, corrected the few tests that misread business rules, and merged the rest within days instead of months."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Once the baseline was in place, every new commit carried its own tests. Coverage stopped drifting downward between releases and began to climb steadily across every team."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Keep Engineers in Control"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Leapyear's security and compliance teams needed proof that nothing reached production without human approval. Every agent change arrives as a normal pull request with a clear summary of what was tested and why, so existing review rules still apply."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Engineers can comment on a generated test and the agent revises it, which turned review into a quick conversation rather than a rewrite. Over time the agents learned each team's conventions and naming patterns."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Measure the Impact Release by Release"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Within one quarter, coverage on every critical service had doubled and time spent writing tests had fallen by more than ninety percent. Release reviews became shorter because reviewers trusted the safety net underneath."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The bigger change was cultural. Engineers no longer see tests as a chore that competes with product work, and teams plan features without reserving whole sprints for maintenance. Leapyear now applies the same agent workflow to integration tests and documentation, and leadership tracks coverage alongside delivery speed as a shared measure of engineering health."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Capsule resolves support tickets three times faster",
+      "slug": "capsule-support-automation",
+      "summary": "Capsule put Synthora agents on its support queue to draft replies, route issues and update records, helping thousands of clinics get answers three times faster without adding a single support hire.",
+      "company": "Capsule",
+      "industry": "Healthcare software",
+      "companySize": "1,200+",
+      "coverImage": "synthora-contact-support",
+      "cardImage": "synthora-v3-case-capsule",
+      "logo": "logo-capsule",
+      "stats": [
+        {
+          "value": "3x",
+          "label": "Faster ticket resolution"
+        },
+        {
+          "value": "62%",
+          "label": "Tickets handled end to end"
+        }
+      ],
+      "quote": "Our agents answer the routine questions instantly, so the team can focus on the conversations that really need a person, and our clinics feel the difference every single day.",
+      "quoteAuthor": {
+        "name": "Marcus Reed",
+        "role": "Head of Support, Capsule",
+        "photo": "synthora-v3-avatar-marcus"
+      },
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Overview"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Capsule builds scheduling and patient communication software used by thousands of clinics. Clinic staff depend on fast answers when a booking fails or a reminder does not send, because every delay affects real patients. As the customer base grew, the support queue grew faster than the team that had to answer it."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Challenge"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Most tickets were routine, yet each one still needed a person to read it, find the clinic's account, check settings in three different tools and write a reply. During Monday mornings and seasonal peaks, wait times stretched to hours and the team spent most of its energy on repetition."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Long wait times during peak hours"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "The same answers written again and again"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Manual updates across three separate tools"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Solution"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Capsule placed Synthora agents in front of its support queue. Agents read every new ticket, pull the account history, check configuration and either resolve the issue directly or hand a complete summary to the right specialist. Replies are drafted in Capsule's own tone and records update automatically in the CRM."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Automatic triage and routing by topic"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Drafted replies in the team's own voice"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Account records updated without copy and paste"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "synthora-v2-feature-agent",
+            "alt": "Synthora Agent chat window ready for a new request"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Answer the Routine Questions Instantly"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The team began by listing the twenty questions that made up most of its weekly volume. Password resets, reminder settings and calendar sync issues topped the list."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Agents learned from Capsule's help center and past resolved tickets, then were tested on a week of real conversations before going live. Within a month they were resolving sixty-two percent of tickets end to end, with a specialist reviewing a sample every day to keep quality high."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Clinics noticed immediately. Questions that used to wait until the afternoon were answered in minutes, often before staff had finished their first appointment of the morning."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Give Specialists the Full Picture"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "When a ticket needs a person, the agent attaches everything the specialist needs: account details, recent changes, error logs and a suggested next step. Nobody starts a conversation by asking the clinic to repeat itself."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Specialists now spend their time on complex integrations and sensitive conversations, the work where human judgement matters most. Handover notes are consistent, so shifts change without losing context or customer trust."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Turn Support into Proactive Care"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Tickets are now resolved three times faster than before, and satisfaction scores have risen in every quarter since launch. Capsule handled a year of rapid growth without adding support headcount."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "With the queue under control, the team has started reaching out before problems happen. Agents watch for failed reminders or sync errors and alert clinics with a fix already prepared. Support has shifted from a cost center to a reason customers stay, and Capsule's product team now uses ticket insights from the agents to prioritise its roadmap."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Foresight automates weekly reporting for every client",
+      "slug": "foresight-reporting-automation",
+      "summary": "Foresight replaced a two-day manual reporting routine with Synthora agent workflows that gather data, check every figure, draft insights and deliver client-ready reports to more than two hundred clients every Monday.",
+      "company": "Foresight",
+      "industry": "Market research",
+      "companySize": "350+",
+      "coverImage": "synthora-office-interior",
+      "cardImage": "synthora-v3-case-hexsmith",
+      "logo": "logo-foresight",
+      "stats": [
+        {
+          "value": "40h",
+          "label": "Saved per analyst each month"
+        },
+        {
+          "value": "100%",
+          "label": "Reports delivered on time"
+        }
+      ],
+      "quote": "Reports that took two days now arrive before our Monday stand-up, the analysis is more consistent than ever, and my team finally has time for the research clients value.",
+      "quoteAuthor": {
+        "name": "Priya Nair",
+        "role": "Director of Analytics, Foresight",
+        "photo": "synthora-v3-avatar-olivia"
+      },
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Overview"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Foresight delivers weekly market intelligence reports to more than two hundred clients across retail, consumer goods and technology. Each report blends data from several research panels and public sources with clear written commentary. Clients plan their week around these reports, so accuracy and punctual delivery are central to the company's reputation."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Challenge"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Analysts spent two full days of every week copying figures between spreadsheets, checking them against last week's numbers and rewriting paragraphs that changed only slightly. During busy periods reports slipped past Monday, formatting varied between analysts, and the team had little time left for the deeper research clients valued most."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Two days of manual work per reporting cycle"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Inconsistent formatting between analysts"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Late deliveries during busy seasons"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Solution"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Foresight built an agent workflow with Synthora that runs every Sunday night. Agents collect data from each source, validate it against previous weeks, flag unusual movements, draft the commentary and assemble a branded report. An analyst reviews each one on Monday morning, edits where needed and approves delivery with one click."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Connected to existing data sources and panels"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Fallback models keep every run reliable"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "One-click approval and client delivery"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "synthora-v2-feature-impact",
+            "alt": "Dashboard showing efficiency, cost savings, support and growth metrics"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Automate the Data, Not the Judgement"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Foresight was clear from the start that analysts would stay responsible for every insight. Agents would handle the preparation, while people made the calls."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The team mapped each step of the old process and found that most of the time went into gathering, cleaning and formatting rather than analysis. Those steps were handed to agents, with validation rules written by senior analysts so every number is checked before it reaches a draft."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Commentary drafts follow Foresight's house style, so reviewers adjust emphasis rather than rewrite sentences. Editing time per report fell from hours to minutes."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Build Reliability into Every Run"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A missed Monday is not an option for Foresight's clients. Synthora's fallback routing switches to a backup model if one provider slows down, and every run logs exactly which sources and models were used."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "If a data source fails, the agent pauses that section and alerts the on-call analyst instead of publishing incomplete numbers. Since launch, every single report has been delivered on time."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Reinvest the Time in Better Research"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Each analyst now saves around forty hours a month. Reports arrive before the Monday stand-up and look consistent across every client account."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Foresight has used the extra capacity to launch a quarterly deep-dive series and a custom research service, both built on the same agent workflow. Analysts describe their work as more interesting than before, client renewals have increased, and the company can now take on new accounts without hiring a larger operations team to keep pace."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Railspeed cuts order processing time by 70 percent",
+      "slug": "railspeed-order-processing",
+      "summary": "Railspeed uses Synthora agents to read incoming orders in any format, validate them against live inventory and book shipments automatically, removing hours of manual data entry for its coordination team every day.",
+      "company": "Railspeed",
+      "industry": "Logistics",
+      "companySize": "2,500+",
+      "coverImage": "case-study-image-1",
+      "cardImage": "synthora-v3-case-cubekit",
+      "logo": "logo-railspeed",
+      "stats": [
+        {
+          "value": "70%",
+          "label": "Less time per order"
+        },
+        {
+          "value": "99.4%",
+          "label": "Order accuracy"
+        }
+      ],
+      "quote": "Orders that used to wait in an inbox are now booked before the customer has put the phone down, and my coordinators finally spend their day solving real problems.",
+      "quoteAuthor": {
+        "name": "Daniel Ortiz",
+        "role": "COO, Railspeed",
+        "photo": "synthora-v3-avatar-daniel"
+      },
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Overview"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Railspeed moves freight by rail and road for manufacturers across three countries. Orders arrive by email, customer portal, spreadsheet and the occasional scanned form, often with different product codes for the same items. Every order has to be checked against inventory and capacity before a shipment can be booked and confirmed."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Challenge"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "A team of coordinators typed each order into the planning system by hand, then checked stock levels and delivery windows in separate tools. At month end the backlog grew to hundreds of orders, small typing errors caused missed pickups, and customers waited hours for confirmation of routine shipments."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Orders arriving in many different formats"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Manual checks against inventory and capacity"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Typing errors that delayed shipments"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Solution"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Railspeed deployed Synthora agents that read every incoming order regardless of format, extract the details, match product codes and validate quantities against live inventory. Clean orders are booked automatically and confirmed to the customer, while anything unusual goes to a coordinator with the problem already highlighted and a suggested fix."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Works with existing inboxes and portals"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Clear rules for validation and exceptions"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Full audit trail for every order"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "$media": "synthora-v2-feature-stack",
+            "alt": "Synthora connecting business apps and importing order data"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Meet Customers Where They Already Are"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Railspeed did not want to force customers onto a new ordering portal. The agents had to work with whatever format each customer already used."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Over two weeks, the agents were tested on thousands of historical orders, from tidy portal submissions to handwritten notes scanned into PDFs. Coordinators reviewed the mismatches, added mapping rules for unusual product codes and approved the workflow for live traffic one customer group at a time."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Customers noticed nothing except faster confirmations. Orders sent late in the evening are now booked and confirmed before the next morning's planning meeting."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Let Coordinators Handle the Exceptions"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Instead of typing data, coordinators now focus on the orders that genuinely need a decision: short stock, unusual routes or new customers. Each exception arrives with context, so it takes minutes rather than an hour to resolve."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Every action the agents take is recorded, which gives managers a complete audit trail for customer disputes and compliance checks. The team trusts the system because it can always see why a decision was made."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Scale Volume Without Scaling Headcount"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Processing time per order fell by seventy percent, and order accuracy reached 99.4 percent. Month-end backlogs have disappeared, and missed pickups caused by data errors are now rare."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Railspeed handled a record peak season with the same coordination team it had the year before. Freed from data entry, coordinators now work directly with key accounts to plan capacity weeks ahead. The company is extending the same agent workflow to invoicing and delivery updates, aiming to give customers live visibility from order to arrival."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

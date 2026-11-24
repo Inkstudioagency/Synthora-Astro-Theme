@@ -1,0 +1,21 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import BlogHero from '@/components/sections/blog/BlogHero.astro';
+import BlogList from '@/components/sections/blog/BlogList.astro';
+import HomeFaq from '@/components/sections/shared/HomeFaq.astro';
+import Cta from '@/components/sections/shared/Cta.astro';
+---
+
+<BaseLayout
+  wfPage="6b03d9375de33e5d414c2696"
+  title="Blog - AI Automation Guides and News | Synthora"
+  description="Read the Synthora blog for product announcements, AI agent automation guides, engineering notes and customer stories that help your team ship faster."
+>
+  <BlogHero />
+  <div class="section-divider"></div>
+  <BlogList />
+  <div class="section-divider"></div>
+  <HomeFaq />
+  <div class="section-divider"></div>
+  <Cta />
+</BaseLayout>

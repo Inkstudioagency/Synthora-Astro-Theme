@@ -1,0 +1,33 @@
+---
+/**
+ * The template's "Primary Button" (Webflow component 403d8bcb...): a label that rolls
+ * up on hover (IX3 interaction) and the dotted arrow icon.
+ */
+import Icon from '@/components/ui/Icon.astro';
+import { linkFor } from '@/lib/links';
+import { wfTarget } from '@/lib/webflow';
+
+interface Props {
+  href: string;
+  label: string;
+  /** Webflow instance path of this button (keeps the template's data-wf-target) */
+  instance: string[];
+}
+
+const { href, label, instance } = Astro.props;
+const link = linkFor(Astro.url.pathname);
+const C = '403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4';
+---
+
+<a
+  data-wf-target={wfTarget(C, C, instance)}
+  data-wf-component-id={C}
+  data-wf-variant-state="base"
+  {...link(href, 'primary-button w-inline-block')}
+>
+  <div class="button-text-mask">
+    <div data-wf-target={wfTarget(C, '403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f6', instance)} class="button-text">{label}</div>
+    <div data-wf-target={wfTarget(C, '403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f8', instance)} class="button-text is-hover">{label}</div>
+  </div>
+  <div data-wf-target={wfTarget(C, '403d8bcb-23c5-ae0d-e0ae-e76c4e0d34fa', instance)} class="button-icon w-embed"><Icon name="dots-arrow" /></div>
+</a>

@@ -1,0 +1,162 @@
+---
+/**
+ * Site navbar (Webflow component "Navbar"): desktop links, the "Multilayout" mega menu
+ * and the mobile menu. Links come from src/config/menu.json, texts from config.json.
+ * The dropdown and the mobile menu are animated by the interaction runtime (webflow.js).
+ */
+import Icon from '@/components/ui/Icon.astro';
+import PrimaryButton from '@/components/ui/PrimaryButton.astro';
+import config from '@/config/config.json';
+import menu from '@/config/menu.json';
+import type { IconName } from '@/lib/icons';
+import { linkFor } from '@/lib/links';
+import { wfTarget } from '@/lib/webflow';
+
+export type HeaderVariant = 'base' | 'transparent';
+
+interface Props {
+  /** "transparent" is the navbar variant used by the V2 pages (over a hero image) */
+  variant?: HeaderVariant;
+}
+
+const { variant = 'base' } = Astro.props;
+const link = linkFor(Astro.url.pathname);
+const { navigation, site } = config;
+
+// Webflow component and instance ids (data-wf-target), see src/lib/webflow.ts
+const NAV = '90946f1e-e38b-46f4-1baf-f955d4653cbe';
+const INSTANCE = ['d713664a-b25f-a745-c63b-9e7122cea5e2'];
+const TRANSPARENT = '291f008e-a7ea-93e9-7081-6add4d341457';
+const t = (element: string) => wfTarget(NAV, element, INSTANCE);
+---
+
+<header
+  data-wf--navbar--variant={variant}
+  data-wf-component-id={NAV}
+  data-wf-variant-state={variant === 'transparent' ? TRANSPARENT : 'base'}
+  class={variant === 'transparent' ? `navbar-component w-variant-${TRANSPARENT}` : 'navbar-component'}
+>
+  <div class="container-main">
+    <div class="navbar-wrapper">
+      <a aria-label="Synthora home page" {...link('/', 'navbar-brand w-inline-block')}>
+        <img src={site.logo} loading="lazy" alt={site.logo_alt} class="navbar-logo" />
+      </a>
+      <nav class="navbar-menu">
+        {menu.main.map((item) => <a {...link(item.url, 'navbar-link')}>{item.name}</a>)}
+        <div data-hover="false" data-delay="0" data-wf-target={t('90946f1e-e38b-46f4-1baf-f955d4653cce')} class="navbar-dropdown w-dropdown">
+          <div class="navbar-dropdown-toggle w-dropdown-toggle">
+            <div class="navbar-dropdown-text">{navigation.mega_menu_label}</div>
+            <div data-wf-target={t('90946f1e-e38b-46f4-1baf-f955d4653cd2')} class="navbar-dropdown-icon w-embed"><Icon name="dropdown" /></div>
+          </div>
+          <nav data-wf-target={t('90946f1e-e38b-46f4-1baf-f955d4653cd3')} class="navbar-dropdown-list w-dropdown-list">
+            <div class="navbar-mega-panel">
+              <div class="navbar-mega-grid">
+                <div class="navbar-mega-columns">
+                  <div class="navbar-mega-column">
+                    <div class="navbar-mega-label">Multi-layout</div>
+                    <div class="navbar-mega-pages">
+                      {
+                        menu.versions.map((group) => (
+                          <div class="navbar-mega-page">
+                            <div class="navbar-mega-icon w-embed"><Icon name={group.icon as IconName} /></div>
+                            <div class="navbar-mega-page-content">
+                              <div class="navbar-mega-page-title">{group.title}</div>
+                              <div class="navbar-mega-versions">
+                                {group.links.map((v, i) => (
+                                  <>
+                                    {i > 0 && <div class="navbar-mega-dot" />}
+                                    <a {...link(v.url, 'navbar-mega-version')}>{v.name}</a>
+                                  </>
+                                ))}
+                              </div>
+                            </div>
+                          </div>
+                        ))
+                      }
+                    </div>
+                  </div>
+                  {
+                    menu.mega.map((column) => (
+                      <>
+                        <div class="navbar-mega-divider" />
+                        <div class="navbar-mega-column">
+                          <div class="navbar-mega-label">{column.title}</div>
+                          <div class="navbar-mega-links">
+                            {column.links.map((l) => <a {...link(l.url, 'navbar-mega-link')}>{l.name}</a>)}
+                          </div>
+                        </div>
+                      </>
+                    ))
+                  }
+                </div>
+                <a aria-label={navigation.preview.label} {...link(navigation.preview.link, 'navbar-mega-preview w-inline-block')}>
+                  <img
+                    src={navigation.preview.image}
+                    loading="lazy"
+                    sizes="100vw"
+                    srcset="/images/synthora-megamenu-preview_1-p-500.webp 500w, /images/synthora-megamenu-preview_1synthora-megamenu-preview.webp 580w"
+                    alt={navigation.preview.image_alt}
+                    class="navbar-mega-preview-image"
+                  />
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </nav>
+      <div class="navbar-actions">
+        <div class="nav-button">
+          <PrimaryButton href={navigation.cta.link} label={navigation.cta.label} instance={[...INSTANCE, '90946f1e-e38b-46f4-1baf-f955d4653cf5']} />
+        </div>
+        <div class="navbar-mobile-menu">
+          <button
+            data-wf-target={t('bb9dcd5c-424d-a381-403d-d0be3c5c792d')}
+            type="button"
+            aria-label="Toggle menu"
+            aria-controls="navbar-mobile-panel"
+            class="navbar-menu-button"
+          >
+            <div data-wf-target={t('59057ee2-de51-c6fc-8d3d-1733bd762016')} class="navbar-menu-icon w-embed"><Icon name="menu" /></div>
+            <div data-wf-target={t('7030e9da-fcf6-c547-9521-7d36404a1152')} class="navbar-menu-icon is-close w-embed"><Icon name="close" /></div>
+          </button>
+          <nav
+            id="navbar-mobile-panel"
+            data-lenis-prevent="true"
+            aria-label="Mobile menu"
+            data-wf-target={t('7b732acd-7d4b-1ca3-7b02-cf2146ea248e')}
+            class="navbar-mobile-list"
+          >
+            <div class="navbar-mobile-links">
+              <div class="navbar-mobile-pages">
+                {
+                  menu.versions.map((group) => (
+                    <div class="navbar-mobile-group">
+                      <div class="navbar-mega-label">{group.mobile_title}</div>
+                      <div class="navbar-mega-versions">
+                        {group.links.map((v, i) => (
+                          <>
+                            {i > 0 && <div class="navbar-mega-dot" />}
+                            <a {...link(v.url, 'navbar-mega-version')}>{v.name}</a>
+                          </>
+                        ))}
+                      </div>
+                    </div>
+                  ))
+                }
+                <div class="navbar-mobile-group">
+                  <div class="navbar-mega-label">{menu.mobile.title}</div>
+                  <div class="navbar-mobile-group-links">
+                    {menu.mobile.links.map((l) => <a {...link(l.url, 'navbar-mega-link')}>{l.name}</a>)}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="navbar-mobile-cta">
+              <PrimaryButton href={navigation.cta.link} label={navigation.cta.label} instance={[...INSTANCE, 'e2f61deb-c073-6c9e-9243-752fdf2103b4']} />
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

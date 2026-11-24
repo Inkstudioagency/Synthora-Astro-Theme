@@ -1,0 +1,72 @@
+---
+import { linkFor } from '@/lib/links';
+const link = linkFor(Astro.url.pathname);
+---
+
+<section class="section_about-v2-intro">
+        <div class="section-gap">
+          <div class="container-main">
+            <div class="about-v2-intro-wrapper">
+              <div data-reveal="fade-up" class="about-v2-intro-top">
+                <div class="section-eyebrow">
+                  <div class="eyebrow-dot"></div>
+                  <div class="eyebrow-dot is-top-right"></div>
+                  <div class="eyebrow-dot is-bottom-left"></div>
+                  <div class="eyebrow-dot is-bottom-right"></div>
+                  <div class="section-eyebrow-text">About</div>
+                </div>
+                <h2 text-scroll-reveal="" class="about-v2-intro-heading">We are an AI-first automation company dedicated to helping businesses solve complex operational challenges. We blend agent technology with hands-on onboarding to deliver measurable results. Our approach is simple: we listen, we automate, and we improve.</h2>
+              </div>
+              <div class="about-v2-intro-grid">
+                <div class="about-v2-intro-visual"><img src="/images/synthora-about-v2-intro_1synthora-about-v2-intro.webp" loading="lazy" sizes="(max-width: 928px) 100vw, 928px" srcset="/images/synthora-about-v2-intro_1-p-500.webp 500w, /images/synthora-about-v2-intro_1-p-800.webp 800w, /images/synthora-about-v2-intro_1synthora-about-v2-intro.webp 928w" alt="Open-plan office with teams working at screens behind glass walls" class="about-v2-intro-image"></div>
+                <div class="about-v2-intro-content">
+                  <div data-reveal="stagger" class="about-v2-intro-stats">
+                    <div class="about-v2-intro-stat">
+                      <div data-counter="counter" class="about-v2-intro-stat-number">4X</div>
+                      <p class="about-v2-intro-stat-text">Average ROI on AI automation projects</p>
+                    </div>
+                    <div class="about-v2-intro-stat">
+                      <div data-counter="counter" class="about-v2-intro-stat-number">87%</div>
+                      <p class="about-v2-intro-stat-text">Of routine tickets resolved by agents</p>
+                    </div>
+                    <div class="about-v2-intro-stat">
+                      <div data-counter="counter" class="about-v2-intro-stat-number">300%</div>
+                      <p class="about-v2-intro-stat-text">Increase in team throughput for clients</p>
+                    </div>
+                  </div>
+                  <div class="about-v2-intro-cta">
+                    <div class="about-v2-intro-cta-left">
+                      <div class="about-v2-intro-cta-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 60 55" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                          <path d="M57.14 25.72H54.28V28.57H57.14H60.00V25.72H57.14Z M57.14 34.29H54.28V37.15H57.14V34.29Z M57.14 17.13H54.28V19.99H57.14V17.13Z M54.28 37.14H51.42V40.00H54.28V37.14Z M54.28 14.28H51.42V17.13H54.28V14.28Z M51.43 45.71H48.57V48.57H51.43V45.71Z M51.43 40.00H48.57V42.86H51.43V40.00Z M51.43 31.43V28.57V25.72V22.85H48.57V25.72H45.71V28.57H48.57V31.43H51.43Z M51.43 11.42H48.57V14.28H51.43V11.42Z M51.43 5.71H48.57V8.56H51.43V5.71Z M48.57 42.86H45.71V45.71H48.57V42.86Z M48.57 8.56H45.71V11.42H48.57V8.56Z M45.71 48.57H42.85V51.43H45.71V48.57Z M45.71 37.14V34.29H42.86V37.14V40.00H40.00H37.14V42.86H40.00H42.86H45.71V40.00V37.14Z M45.71 2.85H42.85V5.71H45.71V2.85Z M42.86 28.57V25.72V22.85H40.00V25.72V28.57V31.43H42.86V28.57Z M37.14 48.57V51.43H34.28H31.43H28.56H25.70H22.84V48.57V45.71H19.99V48.57V51.43V54.28H22.84H25.70H28.56H31.43H34.28H37.14H40.00V51.43V48.57V45.71H37.14V48.57Z M40.00 34.29H37.14V37.15H40.00V34.29Z M40.00 17.13H37.14V19.99H40.00V17.13Z M37.14 11.42V14.28H40.00H42.86V17.13V19.99H45.71V17.13V14.28V11.42H42.86H40.00H37.14Z M37.14 31.43H34.28V34.29H37.14V31.43Z M37.14 19.99H34.28V22.85H37.14V19.99Z M34.29 37.14H31.43H28.56H25.71V40.00H28.56H31.43H34.29V37.14Z M31.43 22.85V19.99H28.56V22.85H25.70V25.72H22.85V28.57H25.70V31.43H28.56V34.29H31.43V31.43H34.29V28.57H37.14V25.72H34.29V22.85H31.43Z M28.56 42.86V45.71H25.71V48.57H28.56H31.43H34.29V45.71H31.43V42.86H28.56Z M31.43 11.42V8.56H34.29V5.71H31.43H28.56H25.71V8.56H28.56V11.42H31.43Z M25.71 17.13H28.56H31.43H34.29V14.28H31.43H28.56H25.71V17.13Z M25.70 31.43H22.85V34.29H25.70V31.43Z M25.70 19.99H22.85V22.85H25.70V19.99Z M22.85 42.86V40.00H19.99H17.13V37.14V34.29H14.28V37.14V40.00V42.86H17.13H19.99H22.85Z M22.84 34.29H19.99V37.15H22.84V34.29Z M22.84 17.13H19.99V19.99H22.84V17.13Z M22.84 5.71V2.85H25.70H28.56H31.43H34.28H37.14V5.71V8.56H40.00V5.71V2.85V3.59e-05H37.14H34.28H31.43H28.56H25.70H22.84H19.99V2.85V5.71V8.56H22.84V5.71Z M19.99 28.57V25.72V22.85H17.14V25.72V28.57V31.43H19.99V28.57Z M17.13 48.57H14.28V51.43H17.13V48.57Z M14.28 17.13V19.99H17.13V17.13V14.28H19.99H22.85V11.42H19.99H17.13H14.28V14.28V17.13Z M17.13 2.85H14.28V5.71H17.13V2.85Z M14.27 42.86H11.42V45.71H14.27V42.86Z M14.27 8.56H11.42V11.42H14.27V8.56Z M11.42 45.71H8.57V48.57H11.42V45.71Z M11.42 40.00H8.57V42.86H11.42V40.00Z M8.57 22.85V25.72V28.57V31.43H11.42V28.57H14.28V25.72H11.42V22.85H8.57Z M11.42 11.42H8.57V14.28H11.42V11.42Z M11.42 5.71H8.57V8.56H11.42V5.71Z M8.56 37.14H5.71V40.00H8.56V37.14Z M8.56 14.28H5.71V17.13H8.56V14.28Z M5.71 34.29H2.85V37.15H5.71V34.29Z M5.71 28.57V25.72H2.85H0V28.57H2.85H5.71Z M5.71 17.13H2.85V19.99H5.71V17.13Z" fill="currentColor"></path>
+                        </svg></div>
+                      <div class="about-v2-intro-cta-text">
+                        <div class="about-v2-intro-cta-title">It’s time to rethink your AI strategy</div>
+                        <div class="about-v2-intro-cta-summary">Schedule a free consultation</div>
+                      </div>
+                    </div>
+                    <a data-wf-target="[[[&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4&quot;,&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4&quot;],[&quot;ac808df0-824c-e38b-a269-40ac637070ab&quot;]]]" data-wf-component-id="403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4" data-wf-variant-state="base" {...link('/contact-v2', 'primary-button w-inline-block')}>
+                      <div class="button-text-mask">
+                        <div data-wf-target="[[[&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4&quot;,&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f6&quot;],[&quot;ac808df0-824c-e38b-a269-40ac637070ab&quot;]]]" class="button-text">Get In Touch</div>
+                        <div data-wf-target="[[[&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4&quot;,&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f8&quot;],[&quot;ac808df0-824c-e38b-a269-40ac637070ab&quot;]]]" class="button-text is-hover">Get In Touch</div>
+                      </div>
+                      <div data-wf-target="[[[&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34f4&quot;,&quot;403d8bcb-23c5-ae0d-e0ae-e76c4e0d34fa&quot;],[&quot;ac808df0-824c-e38b-a269-40ac637070ab&quot;]]]" class="button-icon w-embed"><svg width="100%" height="100%" viewBox="0 0 16 15" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                          <circle cx="10.666" cy="3.2" r="1.067"></circle>
+                          <circle cx="8.533" cy="1.067" r="1.067"></circle>
+                          <circle cx="14.933" cy="7.466" r="1.067"></circle>
+                          <circle cx="1.067" cy="7.466" r="1.067"></circle>
+                          <circle cx="4.268" cy="7.466" r="1.067"></circle>
+                          <circle cx="7.467" cy="7.466" r="1.067"></circle>
+                          <circle cx="10.666" cy="7.466" r="1.067"></circle>
+                          <circle cx="12.8" cy="9.6" r="1.067"></circle>
+                          <circle cx="10.666" cy="11.733" r="1.067"></circle>
+                          <circle cx="8.533" cy="13.866" r="1.067"></circle>
+                          <circle cx="12.8" cy="5.333" r="1.067"></circle>
+                        </svg></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

@@ -1,0 +1,21 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ContactHero from '@/components/sections/contact/ContactHero.astro';
+import ContactInfo from '@/components/sections/contact/ContactInfo.astro';
+import HomeLogos from '@/components/sections/shared/HomeLogos.astro';
+import HomeFaq from '@/components/sections/shared/HomeFaq.astro';
+---
+
+<BaseLayout
+  wfPage="6b03d9375de33e5d414c2693"
+  title="Contact V1 - Talk to Our AI Automation Team | Synthora"
+  description="Talk to the Synthora team about AI agent automation, pricing or support. Send a message, email or call us and we will reply within one business day."
+>
+  <ContactHero />
+  <div class="section-divider"></div>
+  <ContactInfo />
+  <div class="section-divider"></div>
+  <HomeLogos />
+  <div class="section-divider"></div>
+  <HomeFaq />
+</BaseLayout>

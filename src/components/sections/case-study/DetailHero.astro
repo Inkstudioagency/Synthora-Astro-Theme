@@ -1,0 +1,45 @@
+---
+import type { CaseStudy } from '@/lib/content';
+interface Props {
+  entry: CaseStudy;
+}
+const { entry } = Astro.props;
+---
+
+<section class="section_detail-hero">
+        <div class="section-gap is-small is-flush-bottom">
+          <div class="container-main">
+            <div class="detail-hero-wrapper">
+              <div class="detail-hero-header">
+                <div class="detail-hero-heading is-wide">
+                  <div page-load-1="" class="section-eyebrow">
+                    <div class="eyebrow-dot"></div>
+                    <div class="eyebrow-dot is-top-right"></div>
+                    <div class="eyebrow-dot is-bottom-left"></div>
+                    <div class="eyebrow-dot is-bottom-right"></div>
+                    <div class="section-eyebrow-text">Case Study</div>
+                  </div>
+                  <h1 hero-title="" class="heading-style-1">{entry.title}</h1>
+                </div>
+                <div page-load-2="" class="case-logo-card"><img src={entry.logo?.url} loading="lazy" alt={entry.logo?.alt} class="case-logo"></div>
+              </div>
+              <div class="case-hero-grid">
+                <div page-load-3="" class="case-hero-visual"><img src={entry.coverImage?.url} loading="lazy" image-parallax="" alt={entry.coverImage?.alt} class="contact-hero-image"></div>
+                <div class="case-hero-aside">
+                  <p page-load-4="" class="case-hero-summary">{entry.summary}</p>
+                  <div page-load-5="" class="case-hero-stats">
+                    <div class="case-stat">
+                      <div class="case-stat-number">{entry.stats[0]?.value}</div>
+                      <div class="case-stat-label">{entry.stats[0]?.label}</div>
+                    </div>
+                    <div class="case-stat">
+                      <div class="case-stat-number">{entry.stats[1]?.value}</div>
+                      <div class="case-stat-label">{entry.stats[1]?.label}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

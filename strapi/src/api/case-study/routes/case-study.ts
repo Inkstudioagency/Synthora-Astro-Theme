@@ -1,0 +1,6 @@
+/**
+ * case-study route
+ */
+import { factories } from '@strapi/strapi';
+
+export default factories.createCoreRouter('api::case-study.case-study');

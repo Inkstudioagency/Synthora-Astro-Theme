@@ -1,0 +1,22 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import IntegrationsHero from '@/components/sections/integrations/IntegrationsHero.astro';
+import IntegrationsList from '@/components/sections/integrations/IntegrationsList.astro';
+import HomeFaq from '@/components/sections/shared/HomeFaq.astro';
+import Cta from '@/components/sections/shared/Cta.astro';
+---
+
+<BaseLayout
+  wfPage="6b03d9375de33e5d414c2697"
+  title="Integrations - Connect Your Favourite Tools | Synthora"
+  description="Connect Synthora with the automation, CMS, CRM, marketing and team-work tools you already use, and let AI agents work across your whole stack in minutes."
+>
+  <IntegrationsHero />
+  <div class="section-divider"></div>
+  <IntegrationsList />
+  <div class="section-divider"></div>
+  <HomeFaq />
+  <div class="section-divider"></div>
+  <Cta />
+  <div class="section-divider"></div>
+</BaseLayout>

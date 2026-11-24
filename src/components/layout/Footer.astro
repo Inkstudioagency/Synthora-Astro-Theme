@@ -1,0 +1,117 @@
+---
+/**
+ * Site footer: newsletter form (handled by src/scripts/forms.ts), security badges,
+ * link columns (src/config/menu.json), social links (src/config/social.json) and credits.
+ */
+import Icon from '@/components/ui/Icon.astro';
+import config from '@/config/config.json';
+import menu from '@/config/menu.json';
+import social from '@/config/social.json';
+import type { IconName } from '@/lib/icons';
+import { linkFor } from '@/lib/links';
+
+interface Props {
+  /** Webflow page id of the current page (the form's data-wf-page-id, as in the template) */
+  wfPage: string;
+}
+
+const { wfPage } = Astro.props;
+const link = linkFor(Astro.url.pathname);
+const { footer } = config;
+const badges = [
+  { src: '/images/synthora-badge-soc2.svg', alt: 'SOC 2 badge' },
+  { src: '/images/synthora-badge-gdpr.svg', alt: 'GDPR badge' },
+  { src: '/images/synthora-badge-encrypted.svg', alt: 'Encrypted at rest badge' },
+  { src: '/images/synthora-badge-gdpr.svg', alt: 'GDPR badge' },
+];
+---
+
+<footer class="footer-component">
+  <div class="container-main">
+    <div class="footer-wrapper">
+      <div class="footer-top">
+        <div class="footer-left">
+          <div class="footer-newsletter">
+            <div class="footer-newsletter-title">{footer.newsletter_title}</div>
+            <div class="footer-form-block w-form">
+              <form
+                id="newsletter-form"
+                name="wf-form-Newsletter-Form"
+                data-name="Newsletter Form"
+                method="get"
+                class="footer-form"
+                data-wf-page-id={wfPage}
+                data-wf-element-id="e839d487-a19d-1ffd-9cbd-a8c7db82263a"
+              >
+                <label for="newsletter-email" class="footer-form-label">Email Address</label>
+                <input
+                  class="footer-input w-input"
+                  maxlength="256"
+                  name="Newsletter-Email"
+                  data-name="Newsletter Email"
+                  placeholder="Enter your email"
+                  type="email"
+                  id="newsletter-email"
+                  required=""
+                />
+                <input type="submit" data-wait="Please wait..." class="footer-form-button w-button" value="Subscribe" />
+              </form>
+              <div class="footer-form-message w-form-done">
+                <div>Thanks for subscribing! Product updates are on their way.</div>
+              </div>
+              <div class="footer-form-message w-form-fail">
+                <div>Something went wrong. Please check your email and try again.</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-badges">
+            {badges.map((b) => <img src={b.src} loading="lazy" alt={b.alt} class="footer-badge-image" />)}
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-right">
+          <div class="footer-link-columns">
+            {
+              menu.footer.map((column) => (
+                <div class="footer-link-column">
+                  <div class="footer-column-title">{column.title}</div>
+                  <div class="footer-link-list">
+                    {column.links.map((l) => <a {...link(l.url, 'footer-link')}>{l.name}</a>)}
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+          <div class="footer-social-grid">
+            {
+              social.main.map((s) => (
+                <a aria-label={s.name} href={s.link} target="_blank" class="footer-social-link w-inline-block">
+                  <div class="footer-social-icon w-embed">
+                    <Icon name={s.icon as IconName} />
+                  </div>
+                </a>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+      <img
+        src="/images/synthora-footer-wordmark_1synthora-footer-wordmark.webp"
+        loading="lazy"
+        sizes="(max-width: 2560px) 100vw, 2560px"
+        srcset="/images/synthora-footer-wordmark_1-p-500.webp 500w, /images/synthora-footer-wordmark_1-p-800.webp 800w, /images/synthora-footer-wordmark_1-p-1080.webp 1080w, /images/synthora-footer-wordmark_1-p-1600.webp 1600w, /images/synthora-footer-wordmark_1synthora-footer-wordmark.webp 2560w"
+        alt={config.site.title}
+        class="footer-wordmark"
+      />
+      <div class="footer-bottom">
+        <div class="footer-copyright">{footer.copyright}</div>
+        <div class="footer-credits">
+          Designed by <a href={footer.designed_by.link} class="footer-inline-link">{footer.designed_by.name}</a> - Powered by <a
+            href={footer.powered_by.link}
+            class="footer-inline-link">{footer.powered_by.name}</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

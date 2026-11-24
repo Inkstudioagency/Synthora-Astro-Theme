@@ -1,0 +1,40 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import AboutV2Hero from '@/components/sections/about-v2/AboutV2Hero.astro';
+import HomeV2Logos from '@/components/sections/shared/HomeV2Logos.astro';
+import AboutV2Intro from '@/components/sections/about-v2/AboutV2Intro.astro';
+import AboutV2Story from '@/components/sections/about-v2/AboutV2Story.astro';
+import AboutV2Team from '@/components/sections/about-v2/AboutV2Team.astro';
+import V2Stats from '@/components/sections/shared/V2Stats.astro';
+import V2Testimonials from '@/components/sections/shared/V2Testimonials.astro';
+import V2Faq from '@/components/sections/shared/V2Faq.astro';
+import HomeBlog from '@/components/sections/shared/HomeBlog.astro';
+import Cta from '@/components/sections/about-v2/Cta.astro';
+---
+
+<BaseLayout
+  wfPage="6b03d9375de33e5d414c268b"
+  title="About V2 - Our Story, Mission and Team | Synthora"
+  description="Synthora About V2 layout: our story, mission and the people building reliable AI agents that automate real workflows for modern operations teams worldwide."
+  header="transparent"
+>
+  <AboutV2Hero />
+  <HomeV2Logos />
+  <div class="section-divider"></div>
+  <AboutV2Intro />
+  <div class="section-divider"></div>
+  <AboutV2Story />
+  <div class="section-divider"></div>
+  <AboutV2Team />
+  <div class="section-divider"></div>
+  <V2Stats />
+  <div class="section-divider"></div>
+  <V2Testimonials />
+  <div class="section-divider"></div>
+  <V2Faq />
+  <div class="section-divider"></div>
+  <HomeBlog headingReveal />
+  <div class="section-divider"></div>
+  <Cta />
+  <div class="section-divider"></div>
+</BaseLayout>

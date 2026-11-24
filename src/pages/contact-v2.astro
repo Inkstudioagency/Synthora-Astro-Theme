@@ -1,0 +1,23 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ContactV2Hero from '@/components/sections/contact-v2/ContactV2Hero.astro';
+import ContactV2Offices from '@/components/sections/contact-v2/ContactV2Offices.astro';
+import HomeV2Logos from '@/components/sections/shared/HomeV2Logos.astro';
+import V2Faq from '@/components/sections/shared/V2Faq.astro';
+---
+
+<BaseLayout
+  wfPage="6b03d9375de33e5d414c2694"
+  title="Contact V2 - Enquiry Form and Offices | Synthora"
+  description="Synthora Contact V2 layout: reach our team through a detailed enquiry form, direct email addresses and offices in London, New York and San Francisco."
+  header="transparent"
+>
+  <ContactV2Hero />
+  <div class="section-divider"></div>
+  <ContactV2Offices />
+  <div class="section-divider"></div>
+  <HomeV2Logos />
+  <div class="section-divider"></div>
+  <V2Faq />
+  <div class="section-divider"></div>
+</BaseLayout>
