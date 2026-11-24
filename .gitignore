@@ -31,3 +31,6 @@ strapi/.env
 strapi/public/uploads/*
 !strapi/public/uploads/.gitkeep
 strapi/*.log
+
+# Vercel
+.vercel
